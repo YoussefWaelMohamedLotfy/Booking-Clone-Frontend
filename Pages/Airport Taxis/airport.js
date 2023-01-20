@@ -2,6 +2,7 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-tooltip="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+// Remove decoration(underline) from all anchor tags in footer
 var footerLinks = document.querySelectorAll("#footerLinks>div>div>ul>li>a")
     .forEach(element => {
         element.classList.add("text-decoration-none")
@@ -44,6 +45,7 @@ for (var country of countriesMap) {
     spanItem.appendChild(languageText)
 }
 
+// Fill currencies map with data
 var currenciesMap = new Map()
     .set("€£$", "Property currency")
     .set("ARS", "Argentine peso")
@@ -76,3 +78,24 @@ for (var currency of currenciesMap) {
     paragraphItem.innerHTML = `${currency[1]}<br>${currency[0]}`
     buttonItem.appendChild(paragraphItem)
 }
+
+// Handle change events for Radio Buttons
+document.getElementById("onewayRadio")
+    .addEventListener("change", function (event) {
+        document.querySelectorAll(".returnShow")
+            .forEach(elem => {
+                elem.toggleAttribute("hidden")
+            })
+
+        document.getElementsByClassName("returnHide")[0].classList.remove("opacity-0")
+    })
+
+document.getElementById("returnRadio")
+    .addEventListener("change", function (event) {
+        document.querySelectorAll(".returnShow")
+            .forEach(elem => {
+                elem.toggleAttribute("hidden")
+            })
+
+        document.getElementsByClassName("returnHide")[0].classList.add("opacity-0")
+    })

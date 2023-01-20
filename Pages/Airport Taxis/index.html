@@ -62,7 +62,8 @@
                         </div>
                     </div>
 
-                    <button class="btn btn-primary mx-1">
+                    <button class="btn btn-light mx-1" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Contact Customer Service">
                         <i class="bi bi-question-circle fs-5"></i>
                     </button>
                     <a href="#" class="btn btn-info mx-1">List your property</a>
@@ -140,48 +141,52 @@
         <form class="">
             <div class="my-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                    <label class="form-check-label" for="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" value="oneway" name="reservationType" id="onewayRadio" checked>
+                    <label class="form-check-label" for="onewayRadio">
                         One-way
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
+                    <input class="form-check-input" type="radio" value="return" name="reservationType" id="returnRadio">
+                    <label class="form-check-label" for="returnRadio">
                         Return
                     </label>
                 </div>
             </div>
             <div class="text-bg-warning p-1 rounded-1">
-                <div class="input-group">
-                    <span class="input-group-text" id="addon-wrapping">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Enter pickup Location">
-                    <input type="text" class="form-control" placeholder="Enter destination">
-                    <input type="date" class="form-control">
-                    <input type="time" class="form-control">
-                    <span class="input-group-text" id="addon-wrapping">
-                        <i class="bi bi-person"></i>
-                    </span>
-                    <input type="number" class="form-control" min="1" max="16" value="1">
-                    <button class="btn btn-primary px-4" type="button">Search</button>
-                </div>
-                <br />
-                <div class="input-group">
-                    <span class="input-group-text" id="addon-wrapping">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Enter pickup Location">
-                    <input type="text" class="form-control" placeholder="Enter destination">
-                    <input type="date" class="form-control">
-                    <input type="time" class="form-control">
-                    <span class="input-group-text" id="addon-wrapping">
-                        <i class="bi bi-person"></i>
-                    </span>
-                    <input type="number" class="form-control" min="1" max="16" value="1">
-                    <button class="btn btn-primary px-4" type="button">Search</button>
-                </div>
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Enter pickup Location">
+                        <input type="text" class="form-control" placeholder="Enter destination">
+                        <input type="date" class="form-control">
+                        <input type="time" class="form-control">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <input type="number" class="form-control" min="1" max="16" value="1">
+                        <button class="btn btn-primary px-4 returnHide" type="button">Search</button>
+                    </div>
+                </form>
+                <br class="returnShow" hidden />
+                <form class="returnShow" action="" hidden>
+                    <div class="input-group">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Enter pickup Location">
+                        <input type="text" class="form-control" placeholder="Enter destination">
+                        <input type="date" class="form-control">
+                        <input type="time" class="form-control">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <input type="number" class="form-control" min="1" max="16" value="1">
+                        <button class="btn btn-primary px-4" type="button">Search</button>
+                    </div>
+                </form>
             </div>
         </form>
     </section>

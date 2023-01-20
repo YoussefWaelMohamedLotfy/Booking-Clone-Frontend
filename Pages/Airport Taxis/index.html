@@ -21,9 +21,28 @@
                     <button class="btn btn-light">
                         EGP
                     </button>
-                    <button class="btn btn-light">
-                        <i class="fi fi-gr"></i>
+                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-tooltip="tooltip" data-bs-placement="bottom" data-bs-title="Choose your language">
+                        <i class="fi fi-gb fs-5"></i>
                     </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Select your language
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">Suggested for you</h6>
+                                    <div id="languageModal" class="row"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <button class="btn btn-primary">
                         <i class="bi bi-question-circle fs-5"></i>
                     </button>

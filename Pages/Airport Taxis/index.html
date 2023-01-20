@@ -18,37 +18,56 @@
             <div class="container">
                 <a class="navbar-brand">Booking.com</a>
                 <form class="d-flex" role="search">
-                    <button class="btn btn-light">
+                    <button class="btn btn-light mx-1" data-bs-toggle="modal" data-bs-target="#currenciesModal"
+                        data-bs-tooltip="tooltip" data-bs-placement="bottom" data-bs-title="Choose your currency">
                         EGP
                     </button>
-                    <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        data-bs-tooltip="tooltip" data-bs-placement="bottom" data-bs-title="Choose your language">
-                        <i class="fi fi-gb fs-5"></i>
-                    </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Select your language
+                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency
                                     </h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <h6 class="fw-bold mb-3">Suggested for you</h6>
+                                    <h6 class="fw-bold mb-3">All currencies</h6>
+                                    <div id="currencyModal" class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-light mx-1" data-bs-toggle="modal" data-bs-target="#languagesModal"
+                        data-bs-tooltip="tooltip" data-bs-placement="bottom" data-bs-title="Choose your language">
+                        <i class="fi fi-gb fs-5"></i>
+                    </button>
+                    <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your language
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All languages</h6>
                                     <div id="languageModal" class="row"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary mx-1">
                         <i class="bi bi-question-circle fs-5"></i>
                     </button>
-                    <a href="#" class="btn btn-info">List your property</a>
-                    <a href="#" class="btn btn-outline-success">Register</a>
-                    <a href="#" class="btn btn-outline-success">Sign in</a>
+                    <a href="#" class="btn btn-info mx-1">List your property</a>
+                    <a href="#" class="btn btn-outline-primary mx-1">Register</a>
+                    <a href="#" class="btn btn-outline-primary">Sign in</a>
                 </form>
             </div>
         </nav>

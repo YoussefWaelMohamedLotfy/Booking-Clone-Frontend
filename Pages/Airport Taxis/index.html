@@ -8,17 +8,17 @@
     <title>Airport Taxis | Book your airport taxi online | Booking.com</title>
     <link rel="icon" href="../../shared/favico.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
-    <link href="../../bootstrap-custom/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap-custom/custom-scss/custom-bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
     <header class="bg-body-tertiary">
-        <nav class="navbar">
+        <nav class="navbar bg-primary">
             <div class="container">
-                <a class="navbar-brand">Booking.com</a>
+                <a class="navbar-brand text-white fw-bold">Booking.com</a>
                 <form class="d-flex" role="search">
-                    <button class="btn btn-light mx-1" data-bs-toggle="modal" data-bs-target="#currenciesModal"
+                    <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal" data-bs-target="#currenciesModal"
                         data-bs-tooltip="tooltip" data-bs-placement="bottom" data-bs-title="Choose your currency">
                         EGP
                     </button>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-light mx-1" data-bs-toggle="modal" data-bs-target="#languagesModal"
+                    <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal" data-bs-target="#languagesModal"
                         data-bs-tooltip="tooltip" data-bs-placement="bottom" data-bs-title="Choose your language">
                         <i class="fi fi-gb fs-5"></i>
                     </button>
@@ -62,44 +62,45 @@
                         </div>
                     </div>
 
-                    <button class="btn btn-light mx-1" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                    <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip" data-bs-placement="bottom"
                         data-bs-title="Contact Customer Service">
                         <i class="bi bi-question-circle fs-5"></i>
                     </button>
-                    <a href="#" class="btn btn-info mx-1">List your property</a>
-                    <a href="#" class="btn btn-outline-primary mx-1">Register</a>
-                    <a href="#" class="btn btn-outline-primary">Sign in</a>
+                    <a href="#" class="btn btn-outline-primary text-white border mx-1">List your property</a>
+                    <a href="#" class="btn btn-light mx-1">Register</a>
+                    <a href="#" class="btn btn-light">Sign in</a>
                 </form>
             </div>
         </nav>
-        <nav class="navbar">
+        <nav class="navbar bg-primary">
             <div class="container">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link" href="../Stays/index.html">
-                            <i class="bi bi-"></i>
+                        <a class="nav-link text-white" href="../Stays/index.html">
+                            <i class="bi bi-tree"></i>
                             Stays
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link text-white" href="#">
                             <i class="bi bi-airplane"></i>
                             Flights
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Car Rentals/index.html">
+                        <a class="nav-link text-white" href="../Car Rentals/index.html">
                             <i class="bi bi-car-front"></i>
                             Car rentals
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Attractions/index.html">
+                        <a class="nav-link text-white" href="../Attractions/index.html">
+                            <i class="bi bi-binoculars-fill"></i>
                             Attractions
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
+                        <a class="nav-link active border" href="index.html">
                             <i class="bi bi-taxi-front-fill"></i>
                             Airport Taxis
                         </a>
@@ -108,14 +109,14 @@
             </div>
         </nav>
     </header>
-    <section class="text-bg-secondary">
+    <section class="text-bg-light-yellow">
         <div class="container px-5">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#covidAccordion" aria-expanded="true" aria-controls="covidAccordion">
-                            <i class="bi bi-info-circle fs-4 me-1"></i>
+                            <i class="bi bi-info-circle fs-4 me-1 text-gold"></i>
                             Protecting you from COVID-19
                         </button>
                     </h2>
@@ -195,7 +196,7 @@
             <div class="card col-lg-4 border-0">
                 <div class="row g-0">
                     <div class="col-md-2 d-flex justify-content-center align-items-center">
-                        <i class="bi bi-airplane fs-1 bg-success rounded-circle p-3"></i>
+                        <i class="bi bi-airplane fs-1 bg-mint-green rounded-circle p-3"></i>
                     </div>
                     <div class="col-md-10">
                         <div class="card-body">
@@ -208,7 +209,7 @@
             <div class="card col-lg-4 border-0">
                 <div class="row g-0">
                     <div class="col-md-2 d-flex justify-content-center align-items-center">
-                        <i class="bi bi-credit-card fs-1 bg-success rounded-circle p-3"></i>
+                        <i class="bi bi-credit-card fs-1 bg-light-orange rounded-circle p-3"></i>
                     </div>
                     <div class="col-md-10">
                         <div class="card-body">
@@ -221,7 +222,7 @@
             <div class="card col-lg-4 border-0">
                 <div class="row g-0">
                     <div class="col-md-2 d-flex justify-content-center align-items-center">
-                        <i class="bi bi-check-lg fs-1 bg-success rounded-circle p-3"></i>
+                        <i class="bi bi-check-lg fs-1 bg-mint-ocean rounded-circle p-3"></i>
                     </div>
                     <div class="col-md-10">
                         <div class="card-body">
@@ -240,7 +241,7 @@
                 <div class="card border-0">
                     <div class="row g-0">
                         <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <i class="bi bi-car-front-fill fs-1 bg-primary rounded-circle p-3"></i>
+                            <i class="bi bi-car-front-fill fs-1 bg-light-blue rounded-circle p-3"></i>
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
@@ -256,7 +257,7 @@
                 <div class="card border-0">
                     <div class="row g-0">
                         <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <i class="bi bi-person fs-1 bg-primary rounded-circle p-3"></i>
+                            <i class="bi bi-person fs-1 bg-light-blue rounded-circle p-3"></i>
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
@@ -272,7 +273,7 @@
                 <div class="card border-0">
                     <div class="row g-0">
                         <div class="col-md-2 d-flex justify-content-center align-items-center">
-                            <i class="bi bi-building fs-1 bg-primary rounded-circle p-3"></i>
+                            <i class="bi bi-building fs-1 bg-light-blue rounded-circle p-3"></i>
                         </div>
                         <div class="col-md-10">
                             <div class="card-body">
@@ -461,7 +462,7 @@
     </section>
     <section class="py-4 bg-primary">
         <div class="container text-center">
-            <h5>Save time, save money!</h5>
+            <h5 class="text-white">Save time, save money!</h5>
             <p class="lead fs-6">Sign up and we'll send the best deals to you</p>
             <form class="row g-2 d-flex align-items-center justify-content-center">
                 <div class="col-auto">

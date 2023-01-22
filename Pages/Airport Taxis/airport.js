@@ -88,7 +88,7 @@ document.getElementById("onewayRadio")
             })
 
         document.getElementsByClassName("returnHide")[0].classList.remove("opacity-0")
-        document.getElementsByClassName("returnHide")[0].classList.add("disabled")
+        document.getElementsByClassName("returnHide")[0].classList.remove("disabled")
     })
 
 document.getElementById("returnRadio")

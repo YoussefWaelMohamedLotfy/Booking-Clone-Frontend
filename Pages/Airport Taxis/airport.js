@@ -101,3 +101,37 @@ document.getElementById("returnRadio")
         document.getElementsByClassName("returnHide")[0].classList.add("opacity-0")
         document.getElementsByClassName("returnHide")[0].classList.add("disabled")
     })
+
+// Handle Car Categories
+var passengers13 = document.querySelectorAll("#carsCategories>.col-lg-6")
+var passengers47 = document.querySelectorAll("#carsCategories>.col-lg-4")
+
+document.getElementById("btnradio1").addEventListener("change", function () {
+    passengers13.forEach(elem => {
+        elem.hidden = false;
+    })
+
+    passengers47.forEach(elem => {
+        elem.hidden = this.translate
+    })
+})
+
+document.getElementById("btnradio2").addEventListener("change", function () {
+    passengers13.forEach(elem => {
+        elem.hidden = true
+    })
+    
+    passengers47.forEach(elem => {
+        elem.hidden = false;
+    })
+})
+
+document.getElementById("btnradio3").addEventListener("change", function () {
+    passengers13.forEach(elem => {
+        elem.hidden = false
+    })
+    
+    passengers47.forEach(elem => {
+        elem.hidden = false
+    })
+})

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="icon" href="../../shared/favico.ico">
+    <link href="../../bootstrap-custom/custom-scss/custom-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        .custom-tooltip {
+            --bs-tooltip-bg: var(--bs-primary);
+            --bs-tooltip-padding-x: 20px;
+            --bs-tooltip-padding-y: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-white" href="#">Booking.com</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- <section>
+            <div class="position-relative m-4">
+                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100" style="height: 2px;">
+                    <div class="progress-bar"></div>
+                </div>
+                <button type="button"
+                    class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill">1 Enter
+                    Your Details</button>
+                <button type="button"
+                    class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill">2
+                    Payment</button>
+            </div>
+        </section> -->
+        <section class="text-bg-light-yellow my-2">
+            <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#covidAccordion" aria-expanded="true" aria-controls="covidAccordion">
+                            <i class="bi bi-info-circle fs-4 me-1 text-gold"></i>
+                            Protecting you from COVID-19
+                        </button>
+                    </h2>
+                    <div id="covidAccordion" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="col-10 fw-light">
+                                Your safety matters. From July 2020, we're asking all customers to wear a face
+                                covering
+                                when travelling with us. If you don't wear a face covering, your driver may not be
+                                able
+                                to start your journey. Where Coronavirus may affect your plans, here's what you need
+                                to
+                                know about booking with us at this time.
+                                <a href="#">Read more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-2">
+            <div class="row">
+                <aside class="col-lg-4">
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <h6 class="fw-bold">Your booking details</h6>
+                        </div>
+                        <div class="card-body p-0">
+                            <ol class="list-group list-group-flush">
+                                <li class="list-group-item border-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">From</p>
+                                            <small>
+                                                <a href="#">Edit trip</a>
+                                            </small>
+                                        </div>
+                                        <div class="fw-bold">Washington Dulles International Airport (IAD), 1 Saarinen
+                                            Cir, Dulles, VA 20166, USA</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">From</p>
+                                        </div>
+                                        <div class="fw-bold">The Westin Washington Dulles Airport, 2520 Wasser Terrace,
+                                            Herndon, VA 20171, USA</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">Passengers</p>
+                                        </div>
+                                        <div class="fw-bold">1</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">Your trip</p>
+                                        </div>
+                                        <div class="fw-bold">Thu 26 Jan 2023 at 12:00</div>
+                                        <div class="d-grid gap-2 mt-3">
+                                            <button class="btn btn-outline-primary py-3" type="button">Add your
+                                                returns</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0 bg-mint-green">
+                                    <div>
+                                        <i class="bi bi-hand-thumbs-up-fill d-inline text-success"></i>
+                                        <h6 class="d-inline fw-bold ps-1">Book smart</h6>
+                                    </div>
+                                    <p>
+                                        Customers booked 6,000 return trips every week in 2019*.
+                                    </p>
+                                    <p>*(Figure based on the average over 2019)</p>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1 fw-bold">Standard</h6>
+                                        </div>
+                                        <div>
+                                            <p>Up to 3 passengers</p>
+                                            <p>
+                                                Up to 3 medium suitcases
+                                                <i id="info-icon" class="bi bi-info-circle text-info"
+                                                    data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                                                    data-bs-custom-class="custom-tooltip" data-bs-html="true"
+                                                    data-bs-title="This taxi can carry 3 suitcases measuring: <i>Text</i>"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">Journey time</p>
+                                        </div>
+                                        <div class="fw-bold">About 19 mins</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">Distance</p>
+                                        </div>
+                                        <div class="fw-bold">About 11.21 km</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <div class="ms-2 me-auto">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <p class="mb-1">Total Price:</p>
+                                        </div>
+                                        <h2 class="fw-bold">£75.45</h2>
+                                    </div>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </aside>
+                <div class="col-lg-8">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/details.js"></script>
+</body>
+
+</html>

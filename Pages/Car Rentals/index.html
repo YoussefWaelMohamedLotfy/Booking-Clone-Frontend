@@ -156,8 +156,6 @@
     </div>
 
 
-
-
     <div class="alert alert-light alert-dismissible fade show " role="alert">
       <div class="row">
         <div class="col-1">
@@ -203,6 +201,62 @@
     </div>
   </section>
   <!-- End Clean Car  -->
+
+  <!-- Popular car hire brands -->
+  <section>
+    <div class="text-center">
+      <ul>
+        <li class="d-inline-block mx-2 ">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/alamo_logo_lrg.gif">
+          </div>
+        </li>
+
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/avis_logo_lrg.gif">
+          </div>
+        </li>
+
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/dollar_logo_lrg.gif">
+          </div>
+        </li>
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/enterprise_logo_lrg.gif">
+          </div>
+        </li>
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/europcar_logo_lrg.gif">
+          </div>
+        </li>
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/sicily_by_car_logo_lrg.gif">
+          </div>
+        </li>
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/sixt_logo_lrg.gif">
+          </div>
+        </li>
+        <li class="d-inline-block mx-2">
+          <div class="border border-2 my-3 p-3 ">
+            <img src="CarRentalsImages/thrifty_logo_lrg.gif">
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </section>
+
+  <!-- End Popular car hire brands -->
+
+
   <!-- Popular destinations for car hire -->
 
   <section class="container">
@@ -444,32 +498,59 @@
 
 
   <!-- Top worldwide locations for car rental -->
-  <section class="">
+  <section class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="card bg-dark text-white">
+          <img src="CarRentalsImages/madrid.jpg" class="card-img" alt="">
+          <div class="card-img-overlay  text-black">
+            <h5 class="card-text "> Milano </h5>
+            <p class="card-text ">
+              Car hire from EGP 263.74 per day</p>
 
-    <div class="container ">
-      <h3 class="mx-3 mb-3 fw-light">Popular destinations for car hire
-      </h3>
-      <div class="row container mx-4 ">
-        <div class="col-3 ">
-          <img src="CarRentalsImages/240_F_104107186_Tx47eoKzoKqhwrCvAEZV1E5hrRmS2k5M.jpg " class="img-fluid">
-
-        </div>
-        <div class="col-3 ">
-
-          <img src="CarRentalsImages/240_F_104107186_Tx47eoKzoKqhwrCvAEZV1E5hrRmS2k5M.jpg" class="img-fluid">
-        </div>
-        <div class="col-3 ">
-
-          <img src="CarRentalsImages/240_F_104107186_Tx47eoKzoKqhwrCvAEZV1E5hrRmS2k5M.jpg" class="img-fluid">
-
-        </div>
-        <div class="col-3 ">
-
-          <img src="CarRentalsImages/240_F_104107186_Tx47eoKzoKqhwrCvAEZV1E5hrRmS2k5M.jpg" class="img-fluid">
-
+          </div>
         </div>
       </div>
+
+      <div class="col-3">
+        <div class="card bg-dark text-white">
+          <img src="CarRentalsImages/lisbon.jpg" class="card-img" alt="">
+          <div class="card-img-overlay  text-black ">
+            <h5 class="card-text " id="test" onmouseover="colorChange()"> Milano </h5>
+            <p class="card-text ">
+              Car hire from EGP 263.74 per day</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card bg-dark text-white">
+          <img src="CarRentalsImages/lisbon.jpg" class="card-img" alt="">
+          <div class="card-img-overlay  text-black ">
+            <div class=""> <!--backgroung -->
+              <h5 class="card-text"> Milano </h5>
+              <p class="card-text ">
+                Car hire from EGP 263.74 per day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card bg-dark text-white">
+          <img src="CarRentalsImages/madrid.jpg" class="card-img" alt="">
+          <div class="card-img-overlay  text-black">
+            <h5 class="card-text "> Milano </h5>
+            <p class="card-text ">
+              Car hire from EGP 263.74 per day</p>
+
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <!-- End Top worldwide locations for car rental -->
@@ -524,7 +605,10 @@
       ageInfo.classList.remove("d-none");
     }
 
-
+    var color1 = document.getElementById("test") //???
+    function colorChange() {
+      color1.style.color = '#09c';
+    }
 
 
 

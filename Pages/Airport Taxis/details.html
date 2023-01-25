@@ -21,7 +21,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand fw-bold text-white" href="#">Booking.com</a>
             </div>
         </nav>
@@ -41,7 +41,7 @@
                     Payment</button>
             </div>
         </section> -->
-        <section class="text-bg-light-yellow my-2">
+        <section class="bg-warning-subtle my-2">
             <div class="accordion accordion-flush" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -237,24 +237,179 @@
                             </div>
                         </div>
                     </section>
-                    <section class="card text-bg-mint-ocean px-3">
-                        <div class="row">
-                            <div class="card-body col-sm-8">
-                                <h6 class="fw-bold">Heading back to Washington Dulles International Airport (IAD)?</h6>
-                                <p>Make it a return journey for an additional £75.45 (approximately)</p>
+                    <section class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-lg-1 d-flex justify-content-center">
+                                <i class="bi bi-shield-plus fs-1"></i>
                             </div>
-                            <div class="col-sm-4 d-grid p-3">
-                                <button class="btn btn-outline-primary">Add your return</button>
+                            <div class="card-body col-lg-11">
+                                <h6 class="fw-bold">Protecting you during COVID-19</h6>
+                                <p>To improve the safety of your journey, we ask all of our drivers to:</p>
+                                <ul>
+                                    <li>Wear a face covering</li>
+                                    <li>Maintain a safe distance and avoid handling luggage where possible</li>
+                                    <li>Clean cars between rides and make sure hand sanitiser is available</li>
+                                </ul>
                             </div>
                         </div>
                     </section>
-                    <section>
-                        
+                    <section class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Passenger details</h6>
+                            <form class="row g-3">
+                                <div class="col-md-2">
+                                    <label for="passengerTitle" class="form-label">Title</label>
+                                    <select id="passengerTitle" name="passengerTitle" class="form-select">
+                                        <option value="Mr" selected>Mr</option>
+                                        <option value="Mrs">Mrs</option>
+                                        <option value="Miss">Miss</option>
+                                        <option value="Ms">Ms</option>
+                                        <option value="Dr">Dr</option>
+                                        <option value="Prof">Prof</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="passengerFirstName" class="form-label">First name</label>
+                                    <input type="text" name="passengerFirstName" class="form-control"
+                                        id="passengerFirstName" placeholder="Passenger first name">
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="passengerLastName" class="form-label">Last name</label>
+                                    <input type="text" name="passengerLastName" class="form-control"
+                                        id="passengerLastName" placeholder="Passenger last name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="passengerEmail" class="form-label">Email</label>
+                                    <input type="email" name="passengerEmail" class="form-control" id="passengerEmail"
+                                        placeholder="Passenger email address">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="passengerMobile" class="form-label">Mobile number</label>
+                                    <input type="tel" name="passengerMobile" class="form-control" id="passengerMobile">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Add flight details</h6>
+                            <p>Adding your flight details lets your taxi driver know <strong>exactly when and where to
+                                    meet you</strong></p>
+                            <form class="row g-3 mb-2">
+                                <div class="col-md-5">
+                                    <label for="flyFrom" class="form-label">Start searching for a departure
+                                        airport</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="bi bi-airplane"></i>
+                                        </span>
+                                        <input type="text" name="flyFrom" class="form-control" id="flyFrom"
+                                            placeholder="Where are you flying from?">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="flyTo" class="form-label">Flying to</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="bi bi-airplane"></i>
+                                        </span>
+                                        <input type="text" name="flyTo" class="form-control" id="flyTo"
+                                            placeholder="Where are you flying to?">
+                                        <span class="input-group-text" id="basic-addon2" data-bs-tooltip="tooltip"
+                                            data-bs-placement="bottom"
+                                            data-bs-title="To edit your arrival airport, please edit your trip details">
+                                            <i class="bi bi-info-circle text-primary"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <div class="accordion accordion-flush" id="accordionExample">
+                                <div class="accordion-item border-bottom">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Or, enter flight number manually
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="flightNumber" class="form-label">Enter flight
+                                                        number</label>
+                                                    <div class="input-group">
+                                                        <input type="text" name="flightNumber" class="form-control"
+                                                            id="flightNumber" placeholder="E.g. BA 316">
+                                                        <button class="btn btn-primary" type="button"
+                                                            id="button-addon2">Add</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="fw-light">You can usually find this on a confirmation
+                                                        email from the
+                                                        company you booked with</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Add a note for the driver</h6>
+                            <form class="mb-3">
+                                <label for="comments" class="mb-2">Any requests?</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="comments"
+                                        rows="3"></textarea>
+                                    <label for="floatingTextarea2">Comments</label>
+                                </div>
+                            </form>
+                            <div class="card border-0 bg-warning-subtle">
+                                <span class="border-warning border-bottom border-3">
+                                    <div class="card-body">
+                                        <div class="card-title ">
+                                            <i class="bi bi-exclamation-circle-fill text-warning">
+                                                <span class="fst-normal fw-bold text-dark">
+                                                    Travelling with children?
+                                                </span>
+                                            </i>
+                                        </div>
+                                        <p class="card-text">
+                                            In this country, it's illegal for little ones to travel
+                                            without
+                                            a baby seat, child seat or booster seat. Please let us know how many
+                                            children
+                                            are with you and how old they are, so we can tell the taxi company ahead of
+                                            your
+                                            trip. We need 2 working days to arrange this, as child seats are in short
+                                            supply.
+                                        </p>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mb-3 text-end">
+                        <button class="btn btn-primary btn-lg">Continue to book</button>
                     </section>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+    </footer>
 
     <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/details.js"></script>

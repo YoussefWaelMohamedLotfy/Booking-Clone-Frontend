@@ -156,6 +156,18 @@
                     </div>
                 </aside>
                 <div class="col-lg-8">
+                    <section class="alert alert-primary alert-dismissible mt-1" role="alert">
+                        <span>
+                            <i class="bi bi-info-circle fs-4">
+                                <strong class="alert-heading fst-normal fs-5">Just so you know…</strong>
+                            </i>
+                        </span>
+                        <p class="mb-0">We've set your pick-up time to 12 noon at the airport closest to your
+                            accommodation.
+                        </p>
+                        <p class="mb-0">Not right? Edit your booking details to update your results</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </section>
                     <section class="card mb-3">
                         <div class="row g-0">
                             <div class="col-sm-2 d-flex justify-content-center">
@@ -344,11 +356,9 @@
                             <h6 class="card-title fw-bold">Add a note for the driver</h6>
                             <form class="mb-3">
                                 <label for="comments" class="mb-2">Any requests?</label>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="comments"
-                                        rows="3"></textarea>
-                                    <label for="floatingTextarea2">Comments</label>
-                                </div>
+                                <textarea class="form-control"
+                                    placeholder="Things like 'I need a child seat', Please hold a sign that says...'"
+                                    id="comments" rows="3" maxlength="500"></textarea>
                             </form>
                             <div class="card border-0 bg-warning-subtle">
                                 <span class="border-warning border-bottom border-3">
@@ -383,11 +393,78 @@
         </section>
     </main>
     <footer>
-        <section>
-
+        <section class="bg-secondary py-3">
+            <div class="container py-3">
+                <div id="footerLinks" class="row d-flex justify-content-start">
+                    <div class="col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="fw-bold text-white mb-2">Help & Information</li>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Help</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Notice</a>
+                            </li>
+                            <li>
+                                <a href="#">Cookie Statement</a>
+                            </li>
+                            <li>
+                                <a href="#">Modern Slavery Statement</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliate Programme</a>
+                            </li>
+                            <li>
+                                <a href="#">Partner Programme</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="fw-bold text-white mb-2">Popular Airport Transfers</li>
+                            <li>
+                                <a href="#">Heathrow Airport Transfers</a>
+                            </li>
+                            <li>
+                                <a href="#">Gatwick Airport Transfers</a>
+                            </li>
+                            <li>
+                                <a href="#">Manchester Airport Transfers</a>
+                            </li>
+                            <li>
+                                <a href="#">Birmingham Airport Transfers</a>
+                            </li>
+                            <li>
+                                <a href="#">Liverpool Airport Transfers</a>
+                            </li>
+                            <li>
+                                <a href="#">Airport Transfers</a>
+                            </li>
+                            <li>
+                                <a href="#">Chauffeur Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Minibus Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Taxi Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-
+        <section class="bg-primary py-3">
+            <p class="text-center fw-light text-white mb-0">&copy; 2023 Booking.com Transport Ltd</p>
         </section>
     </footer>
 

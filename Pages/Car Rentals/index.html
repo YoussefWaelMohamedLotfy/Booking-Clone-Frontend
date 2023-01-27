@@ -95,7 +95,7 @@
               <i class="bi bi-geo-alt-fill"></i>
             </span>
             <input type="text" class="form-control" placeholder="Enter pickup Location">
-
+            <input type="text" class="form-control" placeholder="Drop-off Location" id="displayGrop-off" hidden>
             <input type="date" class="form-control">
             <input type="date" class="form-control">
 
@@ -128,7 +128,7 @@
           Driver aged between 30 - 65
         </label>
         <i class="bi bi-info-circle  text-gold fs-5 m-2" onclick="ageCheck() "></i>
-        <div id="ageInfo" class="d-none">
+        <div id="ageInfo" hidden>
           <label class="form-check-label my-3 " for=" ageCheck">
             Driver's Age
           </label>
@@ -508,8 +508,8 @@
       <div class="col-3 ">
         <div class="card bg-dark text-white">
           <img src="CarRentalsImages/madrid.jpg" class="card-img" alt="">
-          <div class="card-img-overlay  text-black">
-            <h5 class="card-text "> Milano </h5>
+          <div class="card-img-overlay  text-black d-flex align-items-end">
+            <h5 class="card-text"> Milano </h5>
             <p class="card-text ">
               Car hire from EGP 263.74 per day</p>
 
@@ -545,7 +545,7 @@
       <div class="col-3 ">
         <div class="card bg-dark text-white">
           <img src="CarRentalsImages/madrid.jpg" class="card-img" alt="">
-          <div class="card-img-overlay  text-black ">
+          <div class="card-img-overlay  text-black  ">
             <h5 class="card-text "> Milano </h5>
             <p class="card-text ">
               Car hire from EGP 263.74 per day</p>
@@ -604,11 +604,27 @@
 
   <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+
+    var oneWay = document.getElementById("onewayRadio")
+    var radioChange = document.getElementById("returnRadio")
+    var display = document.getElementById("displayGrop-off")
+    radioChange.addEventListener("change", function () {
+      display.hidden = false
+    })
+
+    oneWay.addEventListener("change", function () {
+      display.hidden = true
+    })
+
     var ageInfo = document.getElementById("ageInfo")
+    var unCheked = document.getElementById("ageCheck")
     function ageCheck() {
 
-      ageInfo.classList.remove("d-none");
+      ageInfo.toggleAttribute("hidden");
+
+      unCheked.toggleAttribute("checked")
     }
+    ////////////////
 
     var color1 = document.getElementById("test") //???
     function colorChange() {

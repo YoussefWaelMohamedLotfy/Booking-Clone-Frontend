@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cheap car rentals: Find best car deals & worldwide locations</title>
+    <link href="../../bootstrap-custom/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    <header class="bg-body-tertiary">
+        <nav class="navbar ">
+            <div class="container">
+                <a class="navbar-brand">Booking.com</a>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-transparent">
+                        EGP
+                    </button>
+                    <button class="btn btn-transparent">
+                        World
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="bi bi-question-circle fs-5"></i>
+                    </button>
+                    <a href="#" class="btn btn-info">List your property</a>
+                    <a href="#" class="btn btn-outline-success">Register</a>
+                    <a href="#" class="btn btn-outline-success">Sign in</a>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="bi bi-"></i>
+                            Stays
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">
+                            <i class="bi bi-airplane"></i>
+                            Flights
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="bi bi-car-front"></i>
+                            Car rentals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Attractions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-taxi-front-fill"></i>
+                            Airport Taxis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- car hire for any kind of trip -->
+    <section id="searchForm" class="container px-5 my-5">
+        <h3>Car hire for any kind of trip</h3>
+        <p>Compare deals from the biggest car hire companies</p>
+        <form class="">
+            <div class="my-3">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="oneway" name="reservationType" id="onewayRadio"
+                        checked>
+                    <label class="form-check-label" for="onewayRadio">
+                        Return to same location
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="return" name="reservationType" id="returnRadio">
+                    <label class="form-check-label" for="returnRadio">
+                        Return to different location
+                    </label>
+                </div>
+            </div>
+            <div class="text-bg-warning p-1 rounded-1">
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Enter pickup Location">
+
+                        <input type="date" class="form-control">
+                        <input type="date" class="form-control">
+
+
+                        <button class="btn btn-primary px-4 returnHide" type="button">Search</button>
+                    </div>
+                </form>
+                <br class="returnShow" hidden />
+                <form class="returnShow" action="" hidden>
+                    <div class="input-group">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Enter pickup Location">
+
+                        <input type="date" class="form-control">
+                        <input type="date" class="form-control">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="bi bi-person"></i>
+                        </span>
+                        <input type="number" class="form-control" min="1" max="16" value="1">
+                        <button class="btn btn-primary px-4" type="button">Search</button>
+                    </div>
+                </form>
+
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input border border-grey border-3 p-2 mx-2 my-3" id="ageCheck"
+                    checked>
+                <label class="form-check-label my-3 " for=" ageCheck">
+                    Driver aged between 30 - 65
+                </label>
+                <i class="bi bi-info-circle  text-gold fs-5 m-2" onclick="ageCheck() "></i>
+                <div id="ageInfo" class="d-none">
+                    <label class="form-check-label my-3 " for=" ageCheck">
+                        Driver's Age
+                    </label>
+                    <input type="text " class="">
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- End car hire for any kind of trip -->
+
+    <!--  Clean Car  -->
+    <section class="container">
+
+        <div class="alert alert-light" role="alert">
+
+            <i class="bi bi-info-circle fs-4"></i>
+            <strong class="mx-1">Sign in to save 10% with Genius</strong>
+            <p class="fw-lighter mx-3">We're working with our partners to keep you safe and in the driving seat. <a
+                    href="#" class="text-decoration-none"> -Learn more</a></p>
+
+
+        </div>
+    </section>
+
+    <!-- Popular car hire brands -->
+    <section>
+        <div class="text-center">
+            <ul>
+                <li class="d-inline-block mx-2 ">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/alamo_logo_lrg.gif">
+                    </div>
+                </li>
+
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/avis_logo_lrg.gif">
+                    </div>
+                </li>
+
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/dollar_logo_lrg.gif">
+                    </div>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/enterprise_logo_lrg.gif">
+                    </div>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/europcar_logo_lrg.gif">
+                    </div>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/sicily_by_car_logo_lrg.gif">
+                    </div>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/sixt_logo_lrg.gif">
+                    </div>
+                </li>
+                <li class="d-inline-block mx-2">
+                    <div class="border border-2 my-3 p-3 ">
+                        <img src="CarRentalsImages/thrifty_logo_lrg.gif">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <!-- End Section -->
+
+
+    <!-- Recommended pick-up locations in London -->
+
+    <section>
+        <div class="text-center">
+            <ul>
+                <li class="d-inline-block mx-2 ">
+                    <div class="border border-2 my-3 p-3 ">
+                        <h5>Car hire at London - St Pancras</h5>
+                        <p>Search rental cars at this pick-up location</p>
+                    </div>
+                </li>
+
+                <li class="d-inline-block mx-2 ">
+                    <div class="border border-2 my-3 p-3 ">
+                        <h5>Car hire at London - St Pancras</h5>
+                        <p>Search rental cars at this pick-up location</p>
+                    </div>
+                </li>
+
+                <li class="d-inline-block mx-2 ">
+                    <div class="border border-2 my-3 p-3 ">
+                        <h5>Car hire at London - St Pancras</h5>
+                        <p>Search rental cars at this pick-up location</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+    <!-- Car hire destinations near London -->
+    <section class="container">
+        <div class="row container">
+            <div class="col-4">
+                <div class="card ">
+                    <img src="CarRentalsImages/lisbon.jpg" class="card-img-top ">
+                    <div class="card-body">
+                        <h4 class="fs-5">London</h4>
+                        <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
+                        <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per
+                            day</span>
+                        <a href="#" class="text-decoration-none d-block my-2">Search rental cars in
+                            London</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card ">
+                    <img src="CarRentalsImages/lisbon.jpg" class="card-img-top ">
+                    <div class="card-body">
+                        <h4 class="fs-5">London</h4>
+                        <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
+                        <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per
+                            day</span>
+                        <a href="#" class="text-decoration-none d-block my-2">Search rental cars in
+                            London</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card ">
+                    <img src="CarRentalsImages/lisbon.jpg" class="card-img-top ">
+                    <div class="card-body">
+                        <h4 class="fs-5">London</h4>
+                        <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
+                        <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per
+                            day</span>
+                        <a href="#" class="text-decoration-none d-block my-2">Search rental cars in
+                            London</a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Popular car rental destinations in the United Kingdom -->
+    <section class="container my-5">
+        <div class="row container">
+
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/1.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/2.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/3.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/4.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/1.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/2.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/3.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/4.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/1.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white">
+                    <img src="CarRentalsImages/2.JPG" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>

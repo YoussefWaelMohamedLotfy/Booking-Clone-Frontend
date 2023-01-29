@@ -8,7 +8,6 @@ window.onload = function () {
     var randomTime = Math.random() * 4000
     
     setTimeout(function () {
-        // handle logic to navigate without keeping history
-        
+        window.location.replace("/Pages/Airport Taxis/details.html")
     }, randomTime)
 }

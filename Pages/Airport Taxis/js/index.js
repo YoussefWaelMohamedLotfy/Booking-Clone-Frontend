@@ -112,7 +112,7 @@ document.getElementById("btnradio1").addEventListener("change", function () {
     })
 
     passengers47.forEach(elem => {
-        elem.hidden = this.translate
+        elem.hidden = true
     })
 })
 

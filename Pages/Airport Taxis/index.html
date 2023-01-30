@@ -101,7 +101,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active border" href="index.html">
+                        <a class="nav-link active rounded-5 border" href="index.html">
                             <i class="bi bi-taxi-front-fill"></i>
                             Airport Taxis
                         </a>
@@ -166,14 +166,16 @@
                         <span class="input-group-text" id="addon-wrapping">
                             <i class="bi bi-geo-alt-fill"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="Enter pickup Location">
-                        <input type="text" class="form-control" placeholder="Enter destination">
-                        <input type="date" class="form-control">
-                        <input type="time" class="form-control">
+                        <input type="text" id="onewayPickup" name="onewayPickup" class="form-control"
+                            placeholder="Enter pickup Location" required>
+                        <input type="text" id="onewayDestination" name="onewayDestination" class="form-control"
+                            placeholder="Enter destination" required>
+                        <input type="date" id="onewayDate" name="onewayDate" class="form-control">
+                        <input type="time" name="onewayTime" class="form-control">
                         <span class="input-group-text" id="addon-wrapping">
                             <i class="bi bi-person"></i>
                         </span>
-                        <input type="number" class="form-control" min="1" max="16" value="1">
+                        <input type="number" name="onewayNumPassengers" class="form-control" min="1" max="16" value="1">
                         <button class="btn btn-primary px-4 returnHide" type="submit">Search</button>
                     </div>
                     <hr class="returnShow my-2" hidden />
@@ -181,14 +183,16 @@
                         <span class="input-group-text" id="addon-wrapping">
                             <i class="bi bi-geo-alt-fill"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="Enter pickup Location">
-                        <input type="text" class="form-control" placeholder="Enter destination">
-                        <input type="date" class="form-control">
-                        <input type="time" class="form-control">
+                        <input type="text" id="returnPickup" name="returnPickup" class="form-control" disabled
+                            placeholder="Enter pickup Location">
+                        <input type="text" id="returnDestination" name="returnDestination" class="form-control" disabled
+                            placeholder="Enter destination">
+                        <input type="date" id="returnDate" name="returnDate" class="form-control">
+                        <input type="time" id="returnTime" name="returnTime" class="form-control">
                         <span class="input-group-text" id="addon-wrapping">
                             <i class="bi bi-person"></i>
                         </span>
-                        <input type="number" class="form-control" min="1" max="16" value="1">
+                        <input type="number" name="returnNumPassengers" class="form-control" min="1" max="16" value="1">
                         <button class="btn btn-primary px-4" type="submit">Search</button>
                     </div>
                 </div>

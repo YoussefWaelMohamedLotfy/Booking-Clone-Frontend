@@ -158,7 +158,7 @@
 
     <div class="alert alert-light alert-dismissible fade show " role="alert">
       <div class="row">
-        <div class="col-1">
+        <div class="col-lg-1 col-sm-3">
           <svg width="100" height="130" viewBox="0 0 120 145" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d)">
               <path
@@ -190,7 +190,7 @@
             </defs>
           </svg>
         </div>
-        <div class="col-11 mt-4 ">
+        <div class="col-lg-11 col-sm-9 mt-4 ">
           <strong>Sign in to save 10% with Genius</strong>
           <p class="fw-light"> You're eligible for discounts on select car rentals<a href="#" class="p-2">-sign in
               now!</a>
@@ -269,7 +269,7 @@
           <div class="card ">
             <img src="CarRentalsImages/240_F_104107186_Tx47eoKzoKqhwrCvAEZV1E5hrRmS2k5M.jpg" class="card-img-top ">
             <div class="card-body">
-              <h4 class="fs-5">London</h4>
+              <h4 class="fs-5"><a href="index2.html" class="text-decoration-none text-dark"> London</a> </h4>
               <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
               <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per day</span>
               <a href="#" class="text-decoration-none d-block my-2">Search rental cars in London</a>
@@ -354,43 +354,57 @@
   </section>
 
 
-  <!-- start   -->
-  <section class=" bg-info">
 
-    <div class="container  ">
+  <!-- customer service -->
 
-      <div class="row container text-center ">
+  <section class="  my-3 " id="backgroundColor">
+    <div class="container">
+      <div class="row ">
         <div class="col-4">
-          <div class="row container">
-            <div class="col-1">
-              <i class="class=bi bi-headset fs-2 "></i>
+          <div class="row ">
+            <div class="col-1 my-2">
+              <i class="bi bi-headphones fs-2 fw-bolder"></i>
             </div>
-            <div class="col-11 ">
-              <p class="d-inline">24/7 customer service</p>
-              <p>24/7 customer service</p>
+            <div class="col-11">
+              <p class="my-2">24/7 customer service</p>
+              <p>We're here to help if you need</p>
             </div>
           </div>
         </div>
 
         <div class="col-4">
-          <i class="bi bi-check2"></i>
-          <p class="d-inline">24/7 customer service</p>
-          <p>24/7 customer service</p>
-
+          <div class="row">
+            <div class="col-1 my-2 ">
+              <i class="bi bi-check2 fs-2 fw-bolder "></i>
+            </div>
+            <div class="col-11">
+              <p class="my-2"> 24/7 customer service</p>
+              <p>We're here to help if you need</p>
+            </div>
+          </div>
         </div>
 
         <div class="col-4">
-          <i class="bi bi-star"></i>
-          <p class="d-inline">24/7 customer service</p>
-          <p>24/7 customer service</p>
-
+          <div class="row">
+            <div class="col-1  my-2">
+              <i class="bi bi-star  fs-3 fs-2 fw-bolder"></i>
+            </div>
+            <div class="col-11 ">
+              <p class="my-2">24/7 customer service</p>
+              <p>We're here to help if you need</p>
+            </div>
+          </div>
         </div>
+
+
       </div>
+
+
     </div>
+
   </section>
 
 
-  <!-- end -->
 
   <!--   Frequently asked questions -->
   <section class="container">
@@ -504,50 +518,58 @@
 
   <!-- Top worldwide locations for car rental -->
   <section class="container">
-    <div class="row">
-      <div class="col-3 ">
-        <div class="card bg-dark text-white">
-          <img src="CarRentalsImages/madrid.jpg" class="card-img" alt="">
-          <div class="card-img-overlay  text-black d-flex align-items-end">
-            <h5 class="card-text"> Milano </h5>
-            <p class="card-text ">
-              Car hire from EGP 263.74 per day</p>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="col-3 ">
-        <div class="card bg-dark text-white">
-          <img src="CarRentalsImages/lisbon.jpg" class="card-img" alt="">
+    <div class="row g-3  ">
+      <div class="col-lg-3 col-sm-6 ">
+        <div class="card bg-dark text-white border-0">
+          <img src="CarRentalsImages/big-ben-houses-parliament-london-uk.jpg" class="card-img " alt="">
           <div class="card-img-overlay  text-black ">
-            <h5 class="card-text " id="test" onmouseover="colorChange()"> Milano </h5>
-            <p class="card-text ">
+
+            <h5 class="card-text " onmouseover="colorChange(this)" onmouseleave="colorBack(this)"> Milano</h5>
+            <p class=" card-text fw-semibold fs-5 " onmouseover="colorChange(this)" onmouseleave="colorBack(this)">
+              Car hire from EGP 263.74 per day
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 ">
+        <div class="card bg-dark text-white border-0">
+          <img src="CarRentalsImages/breathtaking-shot-colosseum-amphitheatre-located-rome-italy.jpg" class="card-img"
+            alt="">
+          <div class="card-img-overlay  text-black ">
+            <h5 class="card-text " onmouseover="colorChange(this)" onmouseleave="colorBack(this)"> Milano</h5>
+            <p class="card-text fw-semibold fs-5" id="colorChange" onmouseover="colorChange(this)"
+              onmouseleave="colorBack(this)">
               Car hire from EGP 263.74 per day</p>
 
           </div>
         </div>
       </div>
 
-      <div class="col-3 ">
-        <div class="card bg-dark text-white">
-          <img src="CarRentalsImages/lisbon.jpg" class="card-img" alt="">
+      <div class="col-lg-3 col-sm-6 ">
+        <div class="card bg-dark text-white border-0">
+          <img src="CarRentalsImages/view-dubai-with-sun-sunrise-uae.jpg" class="card-img" alt="">
           <div class="card-img-overlay  text-black ">
             <div class=""> <!--backgroung -->
-              <h5 class="card-text"> Milano </h5>
-              <p class="card-text ">
+              <h5 class="card-text " id="colorChange" onmouseover="colorChange(this)" onmouseleave="colorBack(this)">
+                Milano </h5>
+              <p class="card-text fw-semibold fs-5" id="colorChange" onmouseover="colorChange(this)"
+                onmouseleave="colorBack(this)">
                 Car hire from EGP 263.74 per day</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-3 ">
-        <div class="card bg-dark text-white">
-          <img src="CarRentalsImages/madrid.jpg" class="card-img" alt="">
+      <div class="col-lg-3 col-sm-6 ">
+        <div class="card bg-dark text-white border-0">
+          <img src="CarRentalsImages/photo-canal-city.jpg" class="card-img" alt="">
           <div class="card-img-overlay  text-black  ">
-            <h5 class="card-text "> Milano </h5>
-            <p class="card-text ">
+            <h5 class="card-text " id="colorChange" onmouseover="colorChange(this)" onmouseleave="colorBack(this)">
+              Milano </h5>
+            <p class="card-text fw-semibold fs-5  " id="colorChange" onmouseover="colorChange(this)"
+              onmouseleave="colorBack(this)">
               Car hire from EGP 263.74 per day</p>
 
           </div>
@@ -563,45 +585,220 @@
 
   <!-- subscribe section -->
 
-  <section class="text-center bg-body-tertiary my-5 ">
-    <div class="container my-3">
-      <h1>Save time, save money!</h1>
-      <h4>Sign up and we'll send the best deals to you</h4>
-      <input type="email" required name="email" class="fs-2 my-4  " />
-      <button class="btn btn-outline-primary fs-4 mb-3 ">Subscribe</button>
+  <section class="py-4 bg-primary mt-5">
+    <div class="container text-center">
+      <h5 class="text-white">Save time, save money!</h5>
+      <p class="lead fs-6">Sign up and we'll send the best deals to you</p>
+      <form class="row g-2 d-flex align-items-center justify-content-center">
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="email" class="form-control" id="inputPassword2" placeholder="Your Email Address">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-info">Subscribe</button>
+        </div>
+      </form>
     </div>
-
-
-
-    <div>
-      <button class="btn btn-outline-primary mt-3">List your property</button>
-
-      <div class="p-3">
-        <a class=" p-3">Mobile Version</a>
-        <a class=" p-3">Your Account</a>
-        <a class=" p-3">Your Account</a>
-        <a class=" p-3">Customer Service help</a>
-        <a class=" p-3">Booking.com for Business</a>
-      </div>
+  </section>
+  <section class="bg-info">
+    <div class="text-center pt-3">
+      <a href="#" class="btn btn-sm btn-outline-light">List your property</a>
     </div>
-
-
+    <hr />
+    <div class="container ps-5">
+      <a href="#" class="text-white">Mobile version</a>
+      <a href="#" class="text-white">Your account</a>
+      <a href="#" class="text-white">Make changes to your booking online</a>
+      <a href="#" class="text-white">Customer service help</a>
+      <a href="#" class="text-white">Become an affiliate</a>
+      <a href="#" class="text-white">Booking.com for Business</a>
+    </div>
   </section>
 
+  <!--Foteeerrrr-->
+
+  <footer class="container">
+    <section id="footerLinks" class="my-3">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Countries</a>
+            </li>
+            <li>
+              <a href="#">Regions</a>
+            </li>
+            <li>
+              <a href="#">Cities</a>
+            </li>
+            <li>
+              <a href="#">Districts</a>
+            </li>
+            <li>
+              <a href="#">Airports</a>
+            </li>
+            <li>
+              <a href="#">Hotels</a>
+            </li>
+            <li>
+              <a href="#">Places of interest</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Homes</a>
+            </li>
+            <li>
+              <a href="#">Apartments</a>
+            </li>
+            <li>
+              <a href="#">Resorts</a>
+            </li>
+            <li>
+              <a href="#">Villas</a>
+            </li>
+            <li>
+              <a href="#">Hostels</a>
+            </li>
+            <li>
+              <a href="#">B&Bs</a>
+            </li>
+            <li>
+              <a href="#">Guest houses</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Unique places to stay</a>
+            </li>
+            <li>
+              <a href="#">Reviews</a>
+            </li>
+            <li>
+              <a href="#">Unpacked: Travel articles</a>
+            </li>
+            <li>
+              <a href="#">Travel Communities</a>
+            </li>
+            <li>
+              <a href="#">Seasonal and holiday deals</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Car hire</a>
+            </li>
+            <li>
+              <a href="#"> Flight finder</a>
+            </li>
+            <li>
+              <a href="#">Restaurant reservations</a>
+            </li>
+            <li>
+              <a href="#">Booking.com for Travel Agents</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#">Coronavirus (COVID-19) FAQs</a>
+            </li>
+            <li>
+              <a href="#">About Booking.com</a>
+            </li>
+            <li>
+              <a href="#">Customer Service help</a>
+            </li>
+            <li>
+              <a href="#"> Partner help</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Sustainability</a>
+            </li>
+            <li>
+              <a href="#">Press centre</a>
+            </li>
+            <li>
+              <a href="#">Safety resource centre</a>
+            </li>
+            <li>
+              <a href="#">Investor relations</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">Partner dispute</a>
+            </li>
+            <li>
+              <a href="#">How we work</a>
+            </li>
+            <li>
+              <a href="#">Privacy & Cookie Statement</a>
+            </li>
+            <li>
+              <a href="#">MSA Statement</a>
+            </li>
+            <li>
+              <a href="#">Corporate contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="text-center">
+        <a href="#" class="text-decoration-none">Extranet login</a>
+      </div>
+      <div class="my-4 ps-5">
+        <p class="fw-light">
+          Copyright &copy; 1996-2023 Booking.com&trade;. All rights reserved.
+        </p>
+      </div>
+      <div class="my-1 text-center">
+        <p class="text-muted fw-light">
+          Booking.com is part of Booking Holdings Inc., the world leader in online travel and related
+          services.
+        </p>
+      </div>
+      <div class="my-2 text-center">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <img src="CarRentalsImages/footer1.png" width="96" height="26" />
+          </li>
+          <li class="list-inline-item">
+            <img src="CarRentalsImages/footer2.png" width="96" height="26" />
+          </li>
+          <li class="list-inline-item">
+            <img src="CarRentalsImages/footer3.png" width="96" height="26" />
+          </li>
+          <li class="list-inline-item">
+            <img src="CarRentalsImages/footer4.png" width="96" height="26" />
+          </li>
+          <li class="list-inline-item">
+            <img src="CarRentalsImages/footer5.png" width="96" height="26" />
+          </li>
+          <li class="list-inline-item">
+            <img src="CarRentalsImages/footer6.png" width="96" height="26" />
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+  <!--End Foteeeer-->
   <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
   <script>
 
@@ -626,14 +823,20 @@
     }
     ////////////////
 
-    var color1 = document.getElementById("test") //???
-    function colorChange() {
-      color1.style.color = '#09c';
+    var color1 = document.getElementById("colorChange") //???
+    function colorChange(ele) {
+      ele.style.color = 'red';
     }
 
+    var ColorChange = document.getElementById("colorChange");
+    function colorChange(ele) {
+      ele.style.color = "#ee7a1a";
+    }
+    function colorBack(ele) {
+      ele.style.color = "black";
+    }
 
-
-
+    var backGround = document.getElementById("backgroundColor").style.backgroundColor = "#ece2e2";
   </script>
 
 

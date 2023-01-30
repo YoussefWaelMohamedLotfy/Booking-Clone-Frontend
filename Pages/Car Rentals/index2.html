@@ -95,8 +95,9 @@
                         <span class="input-group-text" id="addon-wrapping">
                             <i class="bi bi-geo-alt-fill"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="Enter pickup Location">
-
+                        <input type="text" class="form-control" placeholder="Enter pickup Location" id="inputValue">
+                        <input type="text" class="form-control" placeholder="Drop-off Location" id="displayGrop-off"
+                            hidden>
                         <input type="date" class="form-control">
                         <input type="date" class="form-control">
 
@@ -130,7 +131,7 @@
                     Driver aged between 30 - 65
                 </label>
                 <i class="bi bi-info-circle  text-gold fs-5 m-2" onclick="ageCheck() "></i>
-                <div id="ageInfo" class="d-none">
+                <div id="ageInfo" hidden>
                     <label class="form-check-label my-3 " for=" ageCheck">
                         Driver's Age
                     </label>
@@ -156,7 +157,8 @@
     </section>
 
     <!-- Popular car hire brands -->
-    <section>
+    <section class="container">
+        <h4 class="mx-5  fw-light">Popular car hire brands</h4>
         <div class="text-center">
             <ul>
                 <li class="d-inline-block mx-2 ">
@@ -210,46 +212,19 @@
     <!-- End Section -->
 
 
-    <!-- Recommended pick-up locations in London -->
 
-    <section>
-        <div class="text-center">
-            <ul>
-                <li class="d-inline-block mx-2 ">
-                    <div class="border border-2 my-3 p-3 ">
-                        <h5>Car hire at London - St Pancras</h5>
-                        <p>Search rental cars at this pick-up location</p>
-                    </div>
-                </li>
-
-                <li class="d-inline-block mx-2 ">
-                    <div class="border border-2 my-3 p-3 ">
-                        <h5>Car hire at London - St Pancras</h5>
-                        <p>Search rental cars at this pick-up location</p>
-                    </div>
-                </li>
-
-                <li class="d-inline-block mx-2 ">
-                    <div class="border border-2 my-3 p-3 ">
-                        <h5>Car hire at London - St Pancras</h5>
-                        <p>Search rental cars at this pick-up location</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- End Section -->
 
 
     <!-- Car hire destinations near London -->
     <section class="container">
+        <h4 class="mx-2 mb-3 fw-light">Car hire destinations near London</h4>
         <div class="row container">
             <div class="col-4">
                 <div class="card ">
                     <img src="CarRentalsImages/lisbon.jpg" class="card-img-top ">
                     <div class="card-body">
                         <h4 class="fs-5">London</h4>
-                        <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
+                        <h6 class="my-2 fw-light fs-6 ">Car hire in 75 pick-up locations</h6>
                         <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per
                             day</span>
                         <a href="#" class="text-decoration-none d-block my-2">Search rental cars in
@@ -261,10 +236,11 @@
             </div>
             <div class="col-4">
                 <div class="card ">
-                    <img src="CarRentalsImages/lisbon.jpg" class="card-img-top ">
+                    <img src="CarRentalsImages/breathtaking-shot-colosseum-amphitheatre-located-rome-italy.jpg"
+                        class="card-img-top ">
                     <div class="card-body">
-                        <h4 class="fs-5">London</h4>
-                        <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
+                        <h4 class="fs-5">Greenford</h4>
+                        <h6 class="my-2 fw-light fs-6">Car hire in 75 pick-up locations</h6>
                         <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per
                             day</span>
                         <a href="#" class="text-decoration-none d-block my-2">Search rental cars in
@@ -277,12 +253,11 @@
 
             <div class="col-4">
                 <div class="card ">
-                    <img src="CarRentalsImages/lisbon.jpg" class="card-img-top ">
+                    <img src="CarRentalsImages/photo-canal-city.jpg" class="card-img-top ">
                     <div class="card-body">
-                        <h4 class="fs-5">London</h4>
-                        <h6 class="my-3 ">Car hire in 75 pick-up locations</h6>
-                        <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 501.30 per
-                            day</span>
+                        <h4 class="fs-5">Sunbury</h4>
+                        <h6 class="my-2 fw-light fs-6 ">Car hire in 75 pick-up locations</h6>
+                        <i class="bi bi-ev-front-fill  my-2 "></i> <span class="">From EGP 448.36 per day</span>
                         <a href="#" class="text-decoration-none d-block my-2">Search rental cars in
                             London</a>
 
@@ -294,15 +269,194 @@
 
 
     </section>
+
+    <!--Ennnddddd-->
+
+    <!-- customer service -->
+
+    <section class="  my-3 " id="backgroundColor">
+        <div class="container">
+            <div class="row ">
+                <div class="col-4">
+                    <div class="row ">
+                        <div class="col-1 my-2">
+                            <i class="bi bi-headphones fs-2 fw-bolder"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="my-2">24/7 customer service</p>
+                            <p>We're here to help if you need</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-1 my-2 ">
+                            <i class="bi bi-check2 fs-2 fw-bolder "></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="my-2"> 24/7 customer service</p>
+                            <p>We're here to help if you need</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-1  my-2">
+                            <i class="bi bi-star  fs-3 fs-2 fw-bolder"></i>
+                        </div>
+                        <div class="col-11 ">
+                            <p class="my-2">24/7 customer service</p>
+                            <p>We're here to help if you need</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--End customer service -->
+
+    <!--   Frequently asked questions -->
+    <section class="container">
+        <h3 class="mx-2 mb-3 fw-light">Frequently asked questions
+        </h3>
+        <div class="container border my-3 ">
+
+            <div class="accordion accordion-flush " id="accordionFlushExample">
+                <div class="accordion-item p-1">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            What do I need to rend a car ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>When you're booking the car, you just need a debit or credit card.</p>
+                            <p>At the rental counter, you'll need:</p>
+                            <ul>
+                                <li>Your passport</li>
+                                <li>Your voucher</li>
+                                <li>Each driver's driving licence</li>
+                                <li>The main driver's credit card (some rental companies also accept debit cards, but
+                                    most don't).</li>
+                            </ul>
+                            <p>Important: Please make sure you check the car's rental terms as well, as each rental
+                                company has its
+                                own rules. For example? They might need to see some extra ID. They might not accept
+                                certain types of
+                                credit card. Or they might not rent to any driver who hasn't held their driving licence
+                                for 36 months or
+                                more.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item p-1">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Am I old enough to rent a car?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Most companies will rent you a car if you're at least 21 (and some
+                            will rent to
+                            younger drivers). But if you're under 25, you might still have to pay a 'young driver fee'.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item p-1">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Can I book a car for my parent,friend,colleague ,etc?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Of course. Just put their details in the 'Driver Details' form when
+                            you're
+                            booking the car.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item p-1">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Any tips on choosing the right car?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Think about where you're going. An SUV might be great for cruising down a Texas
+                                    freeway, but a
+                                    smaller car's probably much easier to drive in Rome.</li>
+                                <li>See what other people think. You'll find lots of reviews and ratings on our site, so
+                                    find out what
+                                    other customers liked (and didn't like) about each rental company.</li>
+                                <li>Don't forget the gearbox. In some countries, nearly everyone drives a manual car. In
+                                    others,
+                                    automatics are the norm. Make sure you rent one you can drive!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item p-1">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed  fs-5" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Can I book a car for my parent,friend,colleague ,etc?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>The price you see includes the car, mandatory cover (e.g. Theft Protection and Collision
+                                Damage Waiver)
+                                and fees that, if they apply, are usually payable at pick-up (e.g. any one-way fees,
+                                airport surcharges
+                                or local taxes).</p>
+                            <p>It also includes any extras you've already added (e.g. GPS or baby seats).</p>
+                            <p>It doesn't include any extra cover you buy when you get to the rental counter.</p>
+                            <p>Tip: There's a full price breakdown on the Payment page.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  End Frequently asked questions -->
 
 
     <!-- Popular car rental destinations in the United Kingdom -->
     <section class="container my-5">
-        <div class="row container">
+        <h4 class="mx-2 mb-3 fw-light">Popular car rental destinations in the United Kingdom</h4>
+        <div class="row container gy-3">
 
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/1.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/breathtaking-shot-colosseum-amphitheatre-located-rome-italy.jpg"
+                        class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -311,8 +465,8 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/2.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/dubai.jpg" class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -321,8 +475,8 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/3.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/malaga.jpg" class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -331,19 +485,8 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/4.JPG" class="card-img" alt="London">
-                    <div class="card-img-overlay ">
-
-                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/1.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/photo-canal-city.jpg" class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -353,28 +496,8 @@
             </div>
 
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/2.JPG" class="card-img" alt="London">
-                    <div class="card-img-overlay ">
-
-                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/3.JPG" class="card-img" alt="London">
-                    <div class="card-img-overlay ">
-
-                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/4.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/view-dubai-with-sun-sunrise-uae.jpg" class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -384,8 +507,8 @@
             </div>
 
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/1.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/lisbon.jpg" class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -394,8 +517,40 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="card bg-dark text-white">
-                    <img src="CarRentalsImages/2.JPG" class="card-img" alt="London">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/photo-canal-city.jpg" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/paris.jpg" class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/breathtaking-shot-colosseum-amphitheatre-located-rome-italy.jpg"
+                        class="card-img" alt="London">
+                    <div class="card-img-overlay ">
+
+                        <p class="card-text "> Car hire from EGP 574.01 per day</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card bg-dark text-white border-0">
+                    <img src="CarRentalsImages/big-ben-houses-parliament-london-uk.jpg" class="card-img" alt="London">
                     <div class="card-img-overlay ">
 
                         <p class="card-text "> Car hire from EGP 574.01 per day</p>
@@ -408,3 +563,44 @@
 
 
     </section>
+
+
+
+    <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var oneWay = document.getElementById("onewayRadio")
+        var radioChange = document.getElementById("returnRadio")
+        var display = document.getElementById("displayGrop-off")
+        radioChange.addEventListener("change", function () {
+            display.hidden = false
+        })
+
+        oneWay.addEventListener("change", function () {
+            display.hidden = true
+        })
+
+        var ageInfo = document.getElementById("ageInfo")
+        var unCheked = document.getElementById("ageCheck")
+        function ageCheck() {
+
+            ageInfo.toggleAttribute("hidden");
+
+            unCheked.toggleAttribute("checked")
+        }
+        /////////////////////////////////
+        var inputval = document.getElementById("inputValue")
+        inputval.value = "London";
+        var backGround = document.getElementById("backgroundColor").style.backgroundColor = "#ece2e2";
+
+
+    </script>
+
+
+
+
+</body>
+
+
+
+
+</html>

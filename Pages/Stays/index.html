@@ -13,23 +13,22 @@
         integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        
+
 </head>
 
 <body>
-    <section class="bg-primary" 
-        <header class="bg-body-tertiary ">
-         <div class="container bg-primary">
+    <section class="bg-primary" <header class="bg-body-tertiary ">
+        <div class="container bg-primary">
             <nav class=" navbar bg-primary ps-5">
                 <div class="container bg-primary ">
                     <a class="navbar-brand ps-5 text-white fw-bold ">Booking.com</a>
                     <form class="d-flex" role="search">
-                        <button class="btn btn-outline-light  border-0 mx-1" data-bs-toggle="modal"
+                        <button class="btn text-white  thumb mx-1" data-bs-toggle="modal"
                             data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
                             data-bs-title="Choose your currency">
                             EGP
                         </button>
-                        <div class="modal fade" id="currenciesModal" tabindex="-1"
+                        <div class="modal fade thumb " id="currenciesModal" tabindex="-1"
                             aria-labelledby="currenciesModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
@@ -48,12 +47,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                        <button class="btn text-white thumb mx-1" data-bs-toggle="modal"
                             data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
                             data-bs-title="Choose your language">
                             <i class="fi fi-gb fs-5"></i>
                         </button>
-                        <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
+                        <div class="modal fade thumb" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
@@ -65,40 +64,48 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <h6 class="fw-bold mb-3">All languages</h6>
-                                        <div id="languageModal" class="row"></div>
+                                        <h6 class="  fw-bold mb-3">All languages</h6>
+                                        <div id="languageModal" class="row thumb "></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
+                        <button class="btn thumb text-white mx-1" data-bs-tooltip="tooltip"
                             data-bs-placement="bottom" data-bs-title="Contact Customer Service">
                             <i class="bi bi-question-circle fs-5"></i>
                         </button>
-                        <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
-                        <a href="#" class="btn btn-light mx-1">Register</a>
-                        <a href="#" class="btn btn-light">Sign in</a>
+                        <a href="#" class=" thumb btn btn-outline-light border-0 mx-1">List your property</a>
+                        <a href="#" class=" thumb btn btn-light mx-1">Register</a>
+                        <a href="#" class=" thumb btn btn-light">Sign in</a>
                     </form>
                 </div>
             </nav>
-            <nav class="navbar bg-primary ps-5 " >
+            <nav class="navbar bg-primary ps-5 ">
                 <style>
                     .thumbnail:hover {
                         background-color: rgba(255, 255, 255, 0.083);
                         color: white;
                         border-radius: 25px;
+                    }
+
+                    .thumb:hover {
+                        background-color: rgba(255, 255, 255, 0.083);
+                        color: white;
+                        border-radius: 0px;
                         
                     }
                 </style>
-                <div class="container ps-5 ms-5"  >
-                    <ul class="nav nav-pills" >
-                        <li class=" thumbnail nav-item" >
+                <div class="container ps-5 ms-5">
+                    <ul class="nav nav-pills">
+                        <li class=" thumbnail nav-item">
+                            <!-- thumbnail for the hover -->
                             <a class="nav-link active border rounded-5 active text-white " href="#">
-                                <i class="bi bi-tree " ></i>
+                                <i class="bi bi-tree "></i>
                                 Stays
                             </a>
                         </li>
                         <li class=" thumbnail nav-item">
+                            <!-- thumbnail for the hover -->
                             <a class="  nav-link text-white " href="#">
                                 <i class="bi bi-airplane"></i>
                                 Flights
@@ -146,19 +153,26 @@
                         <span class="input-group-text border border-warning border-4 rounded-0" id="addon-wrapping">
                             <i class="fa-solid fa-bed"></i>
                         </span>
-                        <input type="text" class="form-control border border-warning border-4"
+                        <input type="text" class=" w-25 form-control border border-warning border-4"
                             placeholder="Where are you going?">
 
-                        <input type="date" class="form-control border border-warning border-4">
-                        <input type="date" class="form-control border border-warning border-4">
+                        <input type="date" class=" w-25 form-control border-end-0 border border-warning border-4"
+                            placeholder="check In">
+                        <input type="date" class=" w-25 form-control border-start-0 border border-warning border-4"
+                            placeholder="check out">
+                        <!-- trials -->
 
+
+                        <!-- trials -->
 
                         <button class="btn btn-primary px-4 returnHide border border-warning border-4 rounded-0"
                             type="button">Search</button>
                     </div>
+
+
                 </form>
-                </div>
             </div>
+        </div>
         </header>
     </section>
 
@@ -180,55 +194,39 @@
 
         </div>
         <!-- covid message in accordion  -->
-        <div class="container  px-5">
-            <div class="accordion " id="accordionExample">
-                <div class="accordion-item rounded-0 border-white">
-                    <div class="accordion-header" id="headingOne">
+        <div class="container ms-1 px-5">
 
-                        <button class="accordion-button border rounded-0 bg-white text-black " style="height: 50px;"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#covidAccordion "
-                            aria-expanded="true" aria-controls="covidAccordion">
-                            <i class="bi bi-info-circle fs-4 me-1 text-gold"></i>
-                            Protecting you from COVID-19
+            <div class=" border rounded-0 ps-3 pt-2 " style="height: 60px;">
+                <div class="accordion-body">
+                    <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
+                    Protecting you from COVID-19
+                    <span class=" ms-4"> <a href="#">Learn more</a> 
+                    </span>
 
-                        </button>
+                </div>
+
+            </div>
 
 
-                        <div id="covidAccordion" class="accordion-collapse border rounded-0 " style="height: 100px;"
-                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="col-10">
-                                    Get the advice you need. Check the latest COVID-19 restrictions before you travel.
-                                </p>
-                                <a href="#">Learn more</a>
-                            </div>
-                        </div>
+
+
+
+            <div class="container text-center p-2 g-col-6">
+
+                <div class="row ps-5 pe-5 ">
+                    <div class="col ">
+                        <img src="images/1.jpeg" class="img-fluid" alt="">
                     </div>
+                    <div class="col ps-5 pe-5 ">
 
+                        <img src="images/2.jpeg" class="img-fluid" alt="">
+                    </div>
                 </div>
             </div>
+
+
+            <!-- Insert your code here -->
         </div>
-
-
-
-
-
-        <div class="container text-center p-2 g-col-6">
-
-            <div class="row ps-5 pe-5 ">
-                <div class="col ">
-                    <img src="images/1.jpeg" class="img-fluid" alt="">
-                </div>
-                <div class="col ps-5 pe-5 ">
-
-                    <img src="images/2.jpeg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Insert your code here -->
-
 
 
     </main>

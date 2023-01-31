@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
         integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
 
 
 </head>
@@ -19,9 +20,11 @@
 <body>
     <section class="bg-primary" <header class="bg-body-tertiary ">
         <div class="container bg-primary">
-            <nav class=" navbar bg-primary ps-5">
+            <nav class=" navbar bg-primary ps-3">
                 <div class="container bg-primary me-5 mt-3 ">
-                    <a class="navbar-brand ps-5 ms-5 text-white fw-bold "><h3>Booking.com</h3></a>
+                    <a class="navbar-brand ps-5 ms-5 text-white fw-bold ">
+                        <h3>Booking.com</h3>
+                    </a>
                     <form class="d-flex" role="search">
                         <button class="btn text-white  thumb mx-1" data-bs-toggle="modal"
                             data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
@@ -52,8 +55,8 @@
                             data-bs-title="Choose your language">
                             <i class="fi fi-gb fs-5"></i>
                         </button>
-                        <div class="modal fade thumb" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
-                            aria-hidden="true">
+                        <div class="modal fade thumb" id="languagesModal" tabindex="-1"
+                            aria-labelledby="languagesModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -70,8 +73,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn thumb text-white mx-1" data-bs-tooltip="tooltip"
-                            data-bs-placement="bottom" data-bs-title="Contact Customer Service">
+                        <button class="btn thumb text-white mx-1" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Contact Customer Service">
                             <i class="bi bi-question-circle fs-5"></i>
                         </button>
                         <a href="#" class=" thumb btn btn-outline-light border-0 mx-3">List your property</a>
@@ -81,29 +84,8 @@
                 </div>
             </nav>
             <nav class="navbar bg-primary ps-5 ">
-                <style>
-                    .thumbnail:hover {
-                        background-color: rgba(255, 255, 255, 0.083);
-                        color: white;
-                        border-radius: 25px;
-                    }
-
-                    .thumb:hover {
-                        background-color: rgba(255, 255, 255, 0.107);
-                        color: white;
-                        border-radius: 0px;
-                        
-                    }
-
-                    .nav-link a.active {
-                        background-color: rgba(255, 255, 255, 0.557);
-                        color: white;
-                        border-radius: 25px;
-                        
-                    }
-
-                </style>
-                <div class="container ps-5 ms-5">
+                
+                <div class="container ps-3 ms-5">
                     <ul class="nav nav-pills">
                         <li class=" thumbnail nav-item">
                             <!-- thumbnail for the hover -->
@@ -142,21 +124,21 @@
 
                 </div>
 
-                <div class="container ps-5 pe-5  mt-5">
-                    <div class="text-white fw-bold ps-5 mb-5">
-                        <h1>Find Your Next Stay </h1>
+                <div class="container ps-3 pe-5  mt-5">
+                    <div class="text-white ps-5 mb-5">
+                        <h1 class="display-5 fw-bold ">Find Your Next Stay </h1>
 
 
-                        <h4 class="text-white">Search deals on hotels, homes, and much more...</h4>
+                        <h3 class="text-white fw-light">Search deals on hotels, homes, and much more...</h3>
                     </div>
                 </div>
 
 
             </nav>
 
-            <div class="container mt-0 ">
+            <div class="container ">
                 <form>
-                    <div class="input-group  ps-5 pe-5 mt-0" style="height: 60px;">
+                    <div class="input-group ps-5 pe-5" style="height: 60px;">
                         <!-- ps= padding start  pe= padding end-->
                         <span class="input-group-text border border-warning border-4 rounded-0" id="addon-wrapping">
                             <i class="fa-solid fa-bed"></i>
@@ -207,8 +189,8 @@
             <div class=" border rounded-0 ps-3 pt-2 " style="height: 60px;">
                 <div class="accordion-body">
                     <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
-                    Protecting you from COVID-19
-                    <span class=" ms-4"> <a href="#">Learn more</a> 
+                    Get the advice you need. Check the latest COVID-19 restrictions before you travel.
+                    <span class=" ms-4"> <a href="#">Learn more</a>
                     </span>
 
                 </div>
@@ -216,21 +198,45 @@
             </div>
 
 
+            <div class="mt-4 ms-4">
+                <h4 class="fw-bold"> Offers</h4>
+                <h6 class="opacity-75">Promotions, deals, and special offers for you</h6>
+            </div>
 
 
+            <div class="grid text-decoration-none ms-5 g-col-6">
 
-            <div class="container text-center p-2 g-col-6">
+                <div class="row ps-2 pe-5 ">
+                    <div class=" card text-bg-dark col ps-0 pe-0 border rounded-0">
 
-                <div class="row ps-5 pe-5 ">
-                    <div class="col ">
-                        <img src="images/1.jpeg" class="img-fluid" alt="">
+                        <img src="images/1.jpeg" class="card-img " alt="">
+
+                        <div class="card-img-overlay border rounded-0">
+                            
+                            <h5 class="card-title pt-5">Escape for a while</h5>
+                            <p class="card-text pe-5">Enjoy the freedom of a monthly stay on Booking.com</p>
+                        
+                        </div>
+
                     </div>
-                    <div class="col ps-5 pe-5 ">
 
-                        <img src="images/2.jpeg" class="img-fluid" alt="">
+
+
+
+                    <div class="  card text-bg-dark col ps-0 pe-0 border rounded-0 ">
+
+                        <img src="images/2.jpeg" class="card-img " alt="">
+
+                        <div class="card-img-overlay border rounded-0">
+                            <h5 class="card-title pt-5">New year, new adventures</h5>
+                            <p class="card-text pe-5">Save 15% or more when you book and stay before March 31, 2023</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
+           
 
 
             <!-- Insert your code here -->

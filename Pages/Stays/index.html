@@ -12,143 +12,155 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
         integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
 </head>
 
 <body>
-    <div class="bg-primary"
-    <header class="bg-body-tertiary  ">
-        <div class ="container bg-primary">
-        <nav class=" navbar bg-primary ps-5">
-            <div class="container bg-primary ">
-                <a class="navbar-brand ps-5 text-white fw-bold ">Booking.com</a>
-                <form class="d-flex" role="search">
-                    <button class="btn btn-outline-light  border-0 mx-1" data-bs-toggle="modal"
-                        data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Choose your currency">
-                        EGP
-                    </button>
-                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your currency
-                                    </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <h6 class="fw-bold mb-3">All currencies</h6>
-                                    <div id="currencyModal" class="row">
+    <section class="bg-primary" 
+        <header class="bg-body-tertiary ">
+         <div class="container bg-primary">
+            <nav class=" navbar bg-primary ps-5">
+                <div class="container bg-primary ">
+                    <a class="navbar-brand ps-5 text-white fw-bold ">Booking.com</a>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-light  border-0 mx-1" data-bs-toggle="modal"
+                            data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Choose your currency">
+                            EGP
+                        </button>
+                        <div class="modal fade" id="currenciesModal" tabindex="-1"
+                            aria-labelledby="currenciesModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
+                                            currency
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6 class="fw-bold mb-3">All currencies</h6>
+                                        <div id="currencyModal" class="row">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                        data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Choose your language">
-                        <i class="fi fi-gb fs-5"></i>
-                    </button>
-                    <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your language
-                                    </h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <h6 class="fw-bold mb-3">All languages</h6>
-                                    <div id="languageModal" class="row"></div>
+                        <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                            data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Choose your language">
+                            <i class="fi fi-gb fs-5"></i>
+                        </button>
+                        <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
+                                            language
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6 class="fw-bold mb-3">All languages</h6>
+                                        <div id="languageModal" class="row"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Contact Customer Service">
+                            <i class="bi bi-question-circle fs-5"></i>
+                        </button>
+                        <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
+                        <a href="#" class="btn btn-light mx-1">Register</a>
+                        <a href="#" class="btn btn-light">Sign in</a>
+                    </form>
+                </div>
+            </nav>
+            <nav class="navbar bg-primary ps-5 " >
+                <style>
+                    .thumbnail:hover {
+                        background-color: rgba(255, 255, 255, 0.083);
+                        color: white;
+                        border-radius: 25px;
+                        
+                    }
+                </style>
+                <div class="container ps-5 ms-5"  >
+                    <ul class="nav nav-pills" >
+                        <li class=" thumbnail nav-item" >
+                            <a class="nav-link active border rounded-5 active text-white " href="#">
+                                <i class="bi bi-tree " ></i>
+                                Stays
+                            </a>
+                        </li>
+                        <li class=" thumbnail nav-item">
+                            <a class="  nav-link text-white " href="#">
+                                <i class="bi bi-airplane"></i>
+                                Flights
+                            </a>
+                        </li>
+                        <li class=" thumbnail nav-item">
+                            <a class="nav-link text-white" href="../Car Rentals/index.html">
+                                <i class="bi bi-car-front"></i>
+                                Car rentals
+                            </a>
+                        </li>
+                        <li class=" thumbnail nav-item">
+                            <a class="nav-link text-white " href="../Attractions/index.html">
+                                <i class="bi bi-binoculars-fill"></i>
+                                Attractions
+                            </a>
+                        </li>
+                        <li class=" thumbnail nav-item">
+                            <a class="nav-link text-white" href="index.html">
+                                <i class="bi bi-taxi-front-fill"></i>
+                                Airport Taxis
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="container ps-5 pe-5  mt-5">
+                    <div class="text-white fw-bold ps-5 mb-5">
+                        <h1>Find Your Next Stay </h1>
+
+
+                        <h4 class="text-white">Search deals on hotels, homes, and much more...</h4>
                     </div>
-                    <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
-                        data-bs-placement="bottom" data-bs-title="Contact Customer Service">
-                        <i class="bi bi-question-circle fs-5"></i>
-                    </button>
-                    <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
-                    <a href="#" class="btn btn-light mx-1">Register</a>
-                    <a href="#" class="btn btn-light">Sign in</a>
+                </div>
+
+
+            </nav>
+
+            <div class="container mt-0 ">
+                <form>
+                    <div class="input-group  ps-5 pe-5 mt-0" style="height: 60px;">
+                        <!-- ps= padding start  pe= padding end-->
+                        <span class="input-group-text border border-warning border-4 rounded-0" id="addon-wrapping">
+                            <i class="fa-solid fa-bed"></i>
+                        </span>
+                        <input type="text" class="form-control border border-warning border-4"
+                            placeholder="Where are you going?">
+
+                        <input type="date" class="form-control border border-warning border-4">
+                        <input type="date" class="form-control border border-warning border-4">
+
+
+                        <button class="btn btn-primary px-4 returnHide border border-warning border-4 rounded-0"
+                            type="button">Search</button>
+                    </div>
                 </form>
-            </div>
-        </nav>
-        <nav class="navbar bg-primary ps-5 ">
-            <div class="container ps-5 ms-5">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link border rounded-5 active text-white" href="#">
-                            <i class="bi bi-tree"></i>
-                            Stays
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">
-                            <i class="bi bi-airplane"></i>
-                            Flights
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="../Car Rentals/index.html">
-                            <i class="bi bi-car-front"></i>
-                            Car rentals
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white " href="../Attractions/index.html">
-                            <i class="bi bi-binoculars-fill"></i>
-                            Attractions
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">
-                            <i class="bi bi-taxi-front-fill"></i>
-                            Airport Taxis
-                        </a>
-                    </li>
-                </ul>
-
-
-            </div>
-
-            <div class="container ps-5 pe-5  mt-5">
-                <div class="text-white fw-bold ps-5 mb-5">
-                    <h1>Find Your Next Stay </h1>
-
-
-                    <h4 class="text-white">Search deals on hotels, homes, and much more...</h4>
                 </div>
             </div>
-
-
-        </nav>
-
-        <div class="container mt-0 ">
-            <form>
-                <div class="input-group  ps-5 pe-5 mt-0" style="height: 60px;">
-                    <!-- ps= padding start  pe= padding end-->
-                    <span class="input-group-text border border-warning border-4 rounded-0" id="addon-wrapping">
-                        <i class="fa-solid fa-bed"></i>
-                    </span>
-                    <input type="text" class="form-control border border-warning border-4"
-                        placeholder="Where are you going?">
-
-                    <input type="date" class="form-control border border-warning border-4">
-                    <input type="date" class="form-control border border-warning border-4">
-
-
-                    <button class="btn btn-primary px-4 returnHide border border-warning border-4 rounded-0"
-                        type="button">Search</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    </header>
-</div>
+        </header>
+    </section>
 
     <main class="container p-4 ps-5 me-5">
         <div class="container p-4 ps-5 me-5">
@@ -167,7 +179,7 @@
 
 
         </div>
-<!-- covid message in accordion  -->
+        <!-- covid message in accordion  -->
         <div class="container  px-5">
             <div class="accordion " id="accordionExample">
                 <div class="accordion-item rounded-0 border-white">
@@ -192,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

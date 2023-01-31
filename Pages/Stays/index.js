@@ -77,4 +77,10 @@ for (var currency of currenciesMap) {
     var paragraphItem = document.createElement("p")
     paragraphItem.innerHTML = `${currency[1]}<br>${currency[0]}`
     buttonItem.appendChild(paragraphItem)
+
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
 }

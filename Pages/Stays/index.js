@@ -96,9 +96,3 @@ for (var currency of currenciesMap) {
   buttonItem.appendChild(paragraphItem);
 }
 
-
-var flkty = new Flickity( '.main-gallery', {
-    // options
-    cellAlign: 'left',
-    contain: true
-  });

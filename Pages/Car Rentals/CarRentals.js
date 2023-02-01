@@ -37,12 +37,11 @@ function colorBack(ele) {
 var backGround = document.getElementById("backgroundColor").style.backgroundColor = "#ece2e2";
 
 
+
+
+
+
 ////page2
 var inputval = document.getElementById("inputValue")
 inputval.value = "London";
 
-//footer
-var footerLinks = document.querySelectorAll("#footerLinks>div>div>ul>li>a")
-    .forEach(element => {
-        element.classList.add("text-decoration-none")
-    })

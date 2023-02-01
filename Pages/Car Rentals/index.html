@@ -800,43 +800,11 @@
 
   <!--End Foteeeer-->
   <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
+  <script src="CarRentals.js">
 
-    var oneWay = document.getElementById("onewayRadio")
-    var radioChange = document.getElementById("returnRadio")
-    var display = document.getElementById("displayGrop-off")
-    radioChange.addEventListener("change", function () {
-      display.hidden = false
-    })
 
-    oneWay.addEventListener("change", function () {
-      display.hidden = true
-    })
 
-    var ageInfo = document.getElementById("ageInfo")
-    var unCheked = document.getElementById("ageCheck")
-    function ageCheck() {
 
-      ageInfo.toggleAttribute("hidden");
-
-      unCheked.toggleAttribute("checked")
-    }
-    ////////////////
-
-    var color1 = document.getElementById("colorChange") //???
-    function colorChange(ele) {
-      ele.style.color = 'red';
-    }
-
-    var ColorChange = document.getElementById("colorChange");
-    function colorChange(ele) {
-      ele.style.color = "#ee7a1a";
-    }
-    function colorBack(ele) {
-      ele.style.color = "black";
-    }
-
-    var backGround = document.getElementById("backgroundColor").style.backgroundColor = "#ece2e2";
   </script>
 
 

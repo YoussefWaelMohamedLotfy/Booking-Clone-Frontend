@@ -218,21 +218,21 @@
             <ul>
                 <li class="d-inline-block mx-2 ">
                     <div class="border border-2 my-3 p-3 ">
-                        <h5>Car hire at London Cite Airport</h5>
+                        <h5 id="onHoverColor">Car hire at London Cite Airport</h5>
                         <p>Search rental cars at this pick-up location</p>
                     </div>
                 </li>
 
                 <li class="d-inline-block mx-2">
                     <div class="border border-2 my-3 p-3 ">
-                        <h5>Car hire at London Cite Airport</h5>
+                        <h5 id="onHoverColor">Car hire at London Cite Airport</h5>
                         <p>Search rental cars at this pick-up location</p>
                     </div>
                 </li>
 
                 <li class="d-inline-block mx-2">
                     <div class="border border-2 my-3 p-3 ">
-                        <h5>Car hire at London Cite Airport</h5>
+                        <h5 id="onHoverColor">Car hire at London Cite Airport</h5>
                         <p>Search rental cars at this pick-up location</p>
                     </div>
                 </li>
@@ -823,34 +823,14 @@
 
 
     <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var oneWay = document.getElementById("onewayRadio")
-        var radioChange = document.getElementById("returnRadio")
-        var display = document.getElementById("displayGrop-off")
-        radioChange.addEventListener("change", function () {
-            display.hidden = false
-        })
-
-        oneWay.addEventListener("change", function () {
-            display.hidden = true
-        })
-
-        var ageInfo = document.getElementById("ageInfo")
-        var unCheked = document.getElementById("ageCheck")
-        function ageCheck() {
-
-            ageInfo.toggleAttribute("hidden");
-
-            unCheked.toggleAttribute("checked")
-        }
-        /////////////////////////////////
-        var inputval = document.getElementById("inputValue")
-        inputval.value = "London";
-        var backGround = document.getElementById("backgroundColor").style.backgroundColor = "#ece2e2";
+    <script src="CarRentals.js"> </script>
 
 
-    </script>
 
+    <script>var footerLinks = document.querySelectorAll("#footerLinks>div>div>ul>li>a")
+            .forEach(element => {
+                element.classList.add("text-decoration-none")
+            })</script>
 
 
 

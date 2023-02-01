@@ -45,38 +45,27 @@ for (var country of countriesMap) {
     spanItem.appendChild(languageText)
 }
 
-// Fill currencies map with data
-var currenciesMap = new Map()
-    .set("€£$", "Property currency")
-    .set("ARS", "Argentine peso")
-    .set("AUD", "Australian dollar")
-    .set("AZN", "Azerbaijan, New Manats")
-    .set("BHD", "Bahrain dinar")
-    .set("BRL", "Brazilian real")
-    .set("BGN", "Bulgarian lev")
-    .set("CAD", "Canadian dollar")
-    .set("XOF", "CFA Franc BCEAO")
-    .set("CLP", "Chilean peso")
-    .set("CNY", "Chinese yuan")
-    .set("COP", "Colombian peso")
-    .set("CZK", "Czech koruna")
-    .set("DKK", "Danish krone")
-    .set("EGP", "Egyptian pound")
-    .set("EUR", "Euro")
-    .set("USD", "U.S. dollar")
-    .set("AED", "U.A.E. dirham")
-    .set("UAH", "Ukraine Hryvnia")
+// Fetch currencies from JSON and load them
+window.onload = function () {
+    var xhr = new XMLHttpRequest()
 
-var currenciesModal = document.getElementById("currencyModal")
+    xhr.open("GET", "/Pages/Airport Taxis/json/currencies.json")
+    xhr.send()
 
-for (var currency of currenciesMap) {
-    var buttonItem = document.createElement("button")
-    buttonItem.classList.add("btn", "btn-light", "text-start", "col-lg-3", "my-2")
-    currenciesModal.appendChild(buttonItem)
+    xhr.onload = () => {
+        var responseArr = JSON.parse(xhr.response)
+        var currenciesModal = document.getElementById("currencyModal")
 
-    var paragraphItem = document.createElement("p")
-    paragraphItem.innerHTML = `${currency[1]}<br>${currency[0]}`
-    buttonItem.appendChild(paragraphItem)
+        for (var currency of responseArr) {
+            var buttonItem = document.createElement("button")
+            buttonItem.classList.add("btn", "btn-light", "text-start", "col-lg-3", "my-2")
+            currenciesModal.appendChild(buttonItem)
+
+            var paragraphItem = document.createElement("p")
+            paragraphItem.innerHTML = `${currency["name"]}<br>${currency["key"]}`
+            buttonItem.appendChild(paragraphItem)
+        }
+    }
 }
 
 // Handle change events for Radio Buttons

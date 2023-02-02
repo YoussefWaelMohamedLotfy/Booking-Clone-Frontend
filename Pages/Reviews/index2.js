@@ -1,20 +1,14 @@
-var counter=10000;
+var counter = 10000;
 
-
-    var set_increaseing =setInterval(function (){ 
-       
-        counter=counter+1900;
-        if(counter>250000){
-            clearInterval(set_increaseing)
-
-
-        }
-        else{
-            document.getElementById("increase_number").innerHTML=counter;
-        }
-
-       
-    },10)
+var set_increaseing = setInterval(function () {
+    counter = counter + 1900;
+    if (counter > 250000) {
+        clearInterval(set_increaseing)
+    }
+    else {
+        document.getElementById("increase_number").innerHTML = counter;
+    }
+}, 30)
 
 // Enable Bootstrap tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-tooltip="tooltip"]')
@@ -96,6 +90,3 @@ for (var currency of currenciesMap) {
     paragraphItem.innerHTML = `${currency[1]}<br>${currency[0]}`
     buttonItem.appendChild(paragraphItem)
 }
-
-
-   

@@ -5,8 +5,6 @@ $primary: #003580;
 $secondary:#0071c2;
 $Emphasis:#00224f;
 
-
-
 $custom-colors: (
     "light-yellow": #fefbf0,
     "gold": $gold,
@@ -14,8 +12,6 @@ $custom-colors: (
     "light-orange": #fff0e0,
     "mint-ocean": #ebf3ff,
     "light-blue": #cce1ff,
-    
-    
 );
 
 @each $color, $value in $custom-colors {

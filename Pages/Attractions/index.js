@@ -78,3 +78,40 @@ for (var currency of currenciesMap) {
     paragraphItem.innerHTML = `${currency[1]}<br>${currency[0]}`
     buttonItem.appendChild(paragraphItem)
 }
+
+var europecities = new Map()
+    .set("llondon", "629 things to do")
+    .set("istanbul", "225 things to do")
+    .set("paris", "681 things to do")
+    .set("hum", "129 things to do")
+    .set("asmes", "225 things to do")
+    .set("lisbon", "681 things to do")
+    .set("roma", "629 things to do")
+    .set("athena", "225 things to do")
+    .set("parlin", "681 things to do")
+    .set("parcolen", "629 things to do")
+    .set("ven", "225 things to do")
+    .set("mala", "681 things to do")
+    .set("cplin", "129 things to do")
+    .set("cproma", "225 things to do")
+    .set("cpven", "681 things to do")
+    .set("i6", "629 things to do")
+
+function loadImages(ditc, divrowname) {
+    var erouperow = document.getElementById(divrowname)
+
+    for (var city of ditc) {
+        var itemdiv = document.createElement("div")
+        itemdiv.classList.add("col-lg-3", "mb-2")
+        erouperow.appendChild(itemdiv)
+        var carddiv = document.createElement("div")
+        carddiv.classList.add("card")
+        itemdiv.appendChild(carddiv)
+        var image = document.createElement("img")
+        image.classList.add("pointerr", "card-img-top")
+        image.setAttribute("src", `images/${city[0]}.png`)
+        carddiv.appendChild(image)
+    }
+}
+
+loadImages(europecities, "europe-row")

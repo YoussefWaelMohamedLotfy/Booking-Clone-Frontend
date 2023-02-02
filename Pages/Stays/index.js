@@ -95,4 +95,3 @@ for (var currency of currenciesMap) {
   paragraphItem.innerHTML = `${currency[1]}<br>${currency[0]}`;
   buttonItem.appendChild(paragraphItem);
 }
-

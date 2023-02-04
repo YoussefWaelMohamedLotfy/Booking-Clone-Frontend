@@ -4,14 +4,11 @@
 }
 
 #d1 {
-
     height: 250px;
     background-color: rgb(202, 215, 224);
-
 }
 
 #bar {
-
     position: relative;
     border-radius: 8px;
     padding: 4px;
@@ -19,18 +16,14 @@
 }
 
 #in1 {
-
-
     height: 49px;
     border-radius: 8px;
-
 }
 
 #in2 {
     width: 90px;
     height: 389x;
     border-radius: 8px;
-
 }
 
 #in3 {
@@ -38,12 +31,10 @@
     height: 50px;
     border-radius: 8px;
     background-color: rgb(27, 37, 73);
-
 }
 
 #d3 {
     background-color: rgba(230, 222, 222, 0.623);
-
     height: 60px;
     border: 15px;
     border-color: rgb(90, 35, 35);
@@ -80,7 +71,6 @@ h4 {
 .nv {
     border: 2px white;
     border-radius: 25px;
-
 }
 
 #att {
@@ -88,9 +78,6 @@ h4 {
     background-color: rgb(5, 5, 51);
 }
 
-.hee {
-    background-color: rgb(5, 5, 51);
-}
 
 .pointer {
     cursor: pointer;

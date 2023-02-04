@@ -15,109 +15,105 @@
 </head>
 
 <body>
-    <header class="bg-body-tertiary hee">
-        <div class="hee">
-            <nav class="navbar">
-                <div class="container">
-                    <a class="navbar-brand text-white fw-bold">Booking.com</a>
-                    <form class="d-flex" role="search">
-                        <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                            data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Choose your currency">
-                            EGP
-                        </button>
-                        <div class="modal fade" id="currenciesModal" tabindex="-1"
-                            aria-labelledby="currenciesModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
-                                            currency
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h6 class="fw-bold mb-3">All currencies</h6>
-                                        <div id="currencyModal" class="row">
-                                        </div>
+    <header class="bg-body-tertiary">
+        <nav class="navbar bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold">Booking.com</a>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                        data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Choose your currency">
+                        EGP
+                    </button>
+                    <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
+                                        currency
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All currencies</h6>
+                                    <div id="currencyModal" class="row">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                            data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Choose your language">
-                            <i style="border-radius: 25px;" class="fi fi-gb fs-5"></i>
-                        </button>
-                        <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
-                                            language
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h6 class="fw-bold mb-3">All languages</h6>
-                                        <div id="languageModal" class="row"></div>
-                                    </div>
+                    </div>
+                    <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                        data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Choose your language">
+                        <i style="border-radius: 25px;" class="fi fi-gb fs-5"></i>
+                    </button>
+                    <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
+                                        language
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="fw-bold mb-3">All languages</h6>
+                                    <div id="languageModal" class="row"></div>
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
-                            data-bs-placement="bottom" data-bs-title="Contact Customer Service">
-                            <i class="bi bi-question-circle fs-5"></i>
-                        </button>
-                        <!-- <a href="#" class="btn btn-outline-light border mx-1">List your property</a> -->
-                        <a href="#" class="btn btn-light mx-1 l2">Register</a>
-                        <a href="#" class="btn btn-light l2">Sign in</a>
-                    </form>
-                </div>
-            </nav>
-            <nav class="navbar ">
-                <div class="container">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item nv ">
-                            <a class="nav-link text-white" href="../Stays/index.html">
-                                <i class="bi bi-tree"></i>
-                                Stays
-                            </a>
-                        </li>
-                        <li class=" nv nav-item ">
-                            <a class="nav-link text-white" href="#">
-                                <i class="bi bi-airplane"></i>
-                                Flights
-                            </a>
-                        </li>
-                        <li class="nav-item nv">
-                            <a class="nav-link text-white" href="../Car Rentals/index.html">
-                                <i class="bi bi-car-front"></i>
-                                Car rentals
-                            </a>
-                        </li>
-                        <li class="nav-item nv">
-                            <a id="att" class="nav-link active text-white border" href="index.html">
-                                <i class="bi bi-binoculars-fill"></i>
-                                Attractions
-                            </a>
-                        </li>
-                        <li class="nav-item nv">
-                            <a class="nav-link text-white" href="../Airport Taxis/index.html">
-                                <i class="bi bi-taxi-front-fill"></i>
-                                Airport Taxis
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+                    </div>
+                    <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
+                        data-bs-placement="bottom" data-bs-title="Contact Customer Service">
+                        <i class="bi bi-question-circle fs-5"></i>
+                    </button>
+                    <!-- <a href="#" class="btn btn-outline-light border mx-1">List your property</a> -->
+                    <a href="#" class="btn btn-light mx-1 l2">Register</a>
+                    <a href="#" class="btn btn-light l2">Sign in</a>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar bg-primary">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item nv ">
+                        <a class="nav-link text-white" href="../Stays/index.html">
+                            <i class="bi bi-tree"></i>
+                            Stays
+                        </a>
+                    </li>
+                    <li class=" nv nav-item ">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-airplane"></i>
+                            Flights
+                        </a>
+                    </li>
+                    <li class="nav-item nv">
+                        <a class="nav-link text-white" href="../Car Rentals/index.html">
+                            <i class="bi bi-car-front"></i>
+                            Car rentals
+                        </a>
+                    </li>
+                    <li class="nav-item nv">
+                        <a id="att" class="nav-link active text-white border" href="index.html">
+                            <i class="bi bi-binoculars-fill"></i>
+                            Attractions
+                        </a>
+                    </li>
+                    <li class="nav-item nv">
+                        <a class="nav-link text-white" href="../Airport Taxis/index.html">
+                            <i class="bi bi-taxi-front-fill"></i>
+                            Airport Taxis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-    <!-- Insert your code here -->
     <div class="container-fluid">
         <div id="d1">
             <br>
@@ -143,14 +139,12 @@
             <header>
                 <h3 style="  margin-left: 10px;">Nearby destinations</h3>
             </header>
-
             <div class="row container ">
                 <div class="col-lg-4 mb-2">
                     <div class="card ">
                         <img src="images/i1.png" class="card-img-top pointer">
                     </div>
                 </div>
-
                 <div class="col-lg-4 mb-2">
                     <div class="card ">
                         <img src="images/i2.png" class="card-img-top pointer">
@@ -271,10 +265,8 @@
             </div>
         </div>
     </div>
-
     </section>
     </div>
-
     <footer class="container-fluid ">
         <br>
         <section id="footerLinks" class="my-3">
@@ -416,8 +408,6 @@
             </div>
         </section>
         <section class="mt-4">
-
-
             <hr>
             <div class="my-1 text-center">
                 <p class="text-muted fw-light">
@@ -454,9 +444,6 @@
             </div>
         </section>
     </footer>
-
-
-
 
     <script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>

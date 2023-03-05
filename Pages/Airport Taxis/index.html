@@ -17,19 +17,20 @@
         <nav class="navbar navbar-expand-md bg-primary">
             <div class="container">
                 <a class="navbar-brand text-white fw-bold" href="#">Booking.com</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav ms-auto d-flex mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                                data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                                data-bs-title="Choose your currency">
-                                EGP
-                            </button>
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#currenciesModal" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Choose your currency">
+                                    EGP
+                                </button>
+                            </div>
                             <div class="modal fade" id="currenciesModal" tabindex="-1"
                                 aria-labelledby="currenciesModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-xl">
@@ -51,11 +52,13 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                                data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                                data-bs-title="Choose your language">
-                                <i class="fi fi-gb fs-5"></i>
-                            </button>
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#languagesModal" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Choose your language">
+                                    <i class="fi fi-gb fs-5"></i>
+                                </button>
+                            </div>
                             <div class="modal fade" id="languagesModal" tabindex="-1"
                                 aria-labelledby="languagesModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-xl">
@@ -76,19 +79,27 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
-                                data-bs-placement="bottom" data-bs-title="Contact Customer Service">
-                                <i class="bi bi-question-circle fs-5"></i>
-                            </button>
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Contact Customer Service">
+                                    <i class="bi bi-question-circle fs-5"></i>
+                                </button>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="btn btn-light mx-1">Register</a>
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-light mx-1">Register</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="btn btn-light">Sign in</a>
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-light mx-1">Sign in</a>
+                            </div>
                         </li>
                     </ul>
                 </div>

@@ -18,9 +18,9 @@
 
 <body>
     <section class="bg-primary" <header class="bg-body-tertiary bg-primary">
-        <div class="container bg-primary">
-            <nav class=" navbar bg-primary ps-3">
-                <div class="container bg-primary me-5 mt-3 ">
+        <div class="container-fluid bg-primary">
+            <nav class=" navbar bg-primary ps-3 ">
+                <div class="container-fluid  bg-primary me-5 mt-3 ">
                     <a class="navbar-brand ps-5 ms-5 text-white fw-bold ">
                         <h3>Booking.com</h3>
                     </a>
@@ -30,6 +30,7 @@
                             data-bs-title="Choose your currency">
                             EGP
                         </button>
+
                         <div class="modal fade thumb " id="currenciesModal" tabindex="-1"
                             aria-labelledby="currenciesModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
@@ -49,11 +50,14 @@
                                 </div>
                             </div>
                         </div>
+
                         <button class="btn text-white thumb mx-1" data-bs-toggle="modal"
                             data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
                             data-bs-title="Choose your language">
                             <i class="fi fi-gb fs-5"></i>
                         </button>
+
+
                         <div class="modal fade thumb" id="languagesModal" tabindex="-1"
                             aria-labelledby="languagesModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
@@ -76,19 +80,24 @@
                             data-bs-title="Contact Customer Service">
                             <i class="bi bi-question-circle fs-5"></i>
                         </button>
-                        <a href="#" class=" thumb btn btn-outline-light border-0 mx-3">List your property</a>
-                        <a href="#" class=" btn  btn-sm  btn-light rounded-0 pt-2 mx-3">Register</a>
-                        <a href="#" class=" btn  btn-sm  btn-light rounded-0 pt-2">Sign in</a>
+                        <div class=" container-flex">
+                            <a href="#" class=" thumb col-xs-12 btn btn-outline-light border-0 mx-3">List your
+                                property</a>
+                            <a href="#" class=" btn col-xs-12 btn-sm  btn-light rounded-0 pt-2 mx-3">Register</a>
+                            <a href="#" class=" btn  btn-sm  btn-light rounded-0 pt-2">Sign in</a>
+                        </div>
                     </form>
                 </div>
             </nav>
-            <nav class="navbar bg-primary ps-5 ">
 
-                <div class="container ps-3 ms-5">
-                    <ul class="nav nav-pills">
+            <nav class="navbar bg-primary ps-5">
+
+                <div class="container-fluid ps-3 ms-5">
+                    <ul class="nav nav-pills col-xs-12  col-md-8 col-sm-12">
                         <li class=" thumbnail nav-item">
                             <!-- thumbnail for the hover -->
-                            <a class="nav-link  border rounded-5 active text-white " href="index.html">
+                            <a class="nav-link  border rounded-5 active text-white " aria-current="page"
+                                href="index.html">
                                 <i class="bi bi-tree "></i>
                                 Stays
                             </a>
@@ -123,8 +132,8 @@
 
                 </div>
 
-                <div class="container ps-3 pe-5  mt-5">
-                    <div class="text-white ps-5 mb-5">
+                <div class="container-fluid ps-3 pe-5  mt-5">
+                    <div class="text-white ps-5 mb-5 col-md-8 col-sm-12">
                         <h1 class="display-5 fw-bold ">Find Your Next Stay </h1>
 
 
@@ -135,9 +144,9 @@
 
             </nav>
 
-            <div class="container ">
+            <div class="container-fluid ">
                 <form>
-                    <div class="input-group ps-5 pe-5" style="height: 60px;">
+                    <div class="input-group ps-5 pe-5 col-md-8 col-sm-12" style="height: 60px;">
                         <!-- ps= padding start  pe= padding end-->
                         <span class="input-group-text border border-warning border-4 rounded-0" id="addon-wrapping">
                             <i class="fa-solid fa-bed"></i>
@@ -161,8 +170,8 @@
         </header>
     </section>
 
-    <main class="container p-4 ps-5 me-5">
-        <div class="container p-4 ps-5 me-5">
+    <main class="container-fluid p-4 ps-5 me-5">
+        <div class="container-fluid  p-4 ps-5 me-5">
             <!-- ps= padding start -->
             <input class="form-check-input border rounded-0" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label me-5 " for="flexCheckDefault">
@@ -170,7 +179,7 @@
             </label>
 
 
-            <input class="form-check-input border rounded-0" type="checkbox" value="" id="flexCheckDefault2">
+            <input class="form-check-input col-sm-12 border rounded-0" type="checkbox" value="" id="flexCheckDefault2">
             <!-- border rounded-0= borders -->
             <label class="form-check-label " for="flexCheckDefault2">
                 I'm traveling for work
@@ -179,9 +188,9 @@
 
         </div>
         <!-- covid message  -->
-        <div class="container ms-1 px-5">
+        <div class="container-fluid ms-1 px-5">
 
-            <div class=" border rounded-0 ps-3 pt-2 " style="height: 60px;">
+            <div class=" col-sm-12 col-xs-12 col-lg-12 border rounded-0 ps-3 pt-2 h-100">
 
                 <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
                 Get the advice you need. Check the latest COVID-19 restrictions before you travel.
@@ -193,7 +202,7 @@
             </div>
 
 
-            <div class="mt-4 ms-4">
+            <div class="mt-4 ms-4 col-sm-12">
                 <!--  mt= margin top/ ms= margin start  -->
                 <h4 class="fw-bold"> Offers</h4> <!--  fw= font weight  -->
                 <h6 class="opacity-75">Promotions, deals, and special offers for you</h6>
@@ -203,25 +212,35 @@
 
             <div class=" text-decoration-none ms-5 g-col-6">
 
-                <div class=" row grid column-gap-4 pe-5 ">
-                    <div class=" card text-bg-dark col ps-0 pe-0 border rounded-0">
-                        <img src="images/1.jpeg" class="card-img " alt="">
-                        <div class="card-img-overlay border rounded-0">
-                            <h5 class="card-title pt-5">Escape for a while</h5>
-                            <p class="card-text pe-5">Enjoy the freedom of a monthly stay on Booking.com</p>
-                            <a class="btn btn-secondary btn-sm rounded-0" href="#" role="button"> Discover monthly
-                                stays</a>
+                <div class=" row pe-5 ">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class=" card text-bg-dark col ps-0 pe-0 border rounded-0">
+
+                            <img src="images/1.jpeg" class="card-img " alt="">
+
+                            <div class="card-img-overlay border rounded-0">
+                                <h5 class="card-title pt-5">Escape for a while</h5>
+                                <p class="card-text pe-5">Enjoy the freedom of a monthly stay on Booking.com</p>
+                                <a class="btn btn-secondary btn-sm rounded-0" href="#" role="button"> Discover monthly
+                                    stays</a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="  card text-bg-dark col ps-0 pe-0 border rounded-0 ">
-                        <img src="images/2.jpeg" class="card-img " alt="">
-                        <div class="card-img-overlay border rounded-0 ">
-                            <h5 class="card-title pt-5">New year, new adventures</h5>
-                            <p class="card-text pe-5">Save 15% or more when you book and stay before March 31, 2023</p>
-                            <a class="btn btn-secondary btn-sm rounded-0" href="#" role="button"> Find early 2023
-                                Deals</a>
+                    <div class="col-md-6 col-sm-12">
+
+                        <div class="  card text-bg-dark col ps-0 pe-0 border rounded-0 ">
+                            <img src="images/2.jpeg" class="card-img  " alt="">
+                            <div class="card-img-overlay float-sm-none  border rounded-0 ">
+                                <h5 class="card-title pt-5">New year, new adventures</h5>
+                                <p class="card-text pe-5">Save 15% or more when you book and stay before March 31, 2023
+                                </p>
+                                <a class="btn btn-secondary btn-sm rounded-0" href="#" role="button"> Find early 2023
+                                    Deals</a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -233,15 +252,15 @@
                 </div>
             </div>
         </div>
-        <div class=" container-md ">
+        <div class=" container-fluid ">
             <!-- container for all the elements 6 coloumns-->
             <div class="pt-4 mt-2 ms-3 ps-4">
                 <h4 class=" fw-bold ">Explore Egypt</h4>
                 <h6 class=" text-muted">These popular destinations have a lot to offer</h6>
             </div>
-            <div class="row row-cols-6 mt-3  ms-4 me-3  ">
+            <div class="row row-cols-6 col-xs-12 mt-3  ms-4 me-3  ">
                 <!-- a row and then deivided to 6 coloumns-->
-                <div class="col-md-2 pe-0">
+                <div class="col-md-2 col-sm-6 col-xs-12 pe-0">
                     <div class=" card border-0  "><a href=""><img class="img-fluid border-0" src="images/col1.jpeg"
                                 alt=""></a>
                         <h6 class=" card-title fw-bold ms-1 ">Alexandria</h6>
@@ -249,7 +268,7 @@
                         <!--text muted = to grey out-->
                     </div>
                 </div>
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col2.jpeg"
                                 alt=""></a>
 
@@ -257,7 +276,7 @@
                         <h6 class="card-subtitle mb-2 text-muted ms-1">898 properties</h6>
                     </div>
                 </div>
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col3.jpeg"
                                 alt=""></a>
 
@@ -266,7 +285,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col4.jpeg"
                                 alt=""></a>
 
@@ -276,14 +295,14 @@
 
                     </div>
                 </div>
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col5.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Dahab</h6>
                         <h6 class="card-subtitle mb-2 text-muted ms-1">213 properties</h6>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-6 col-xs-12">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col6.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Ain Sokhna</h6>
@@ -293,14 +312,14 @@
             </div>
         </div>
         </div>
-        <div class=" container ">
+        <div class=" container-fluid ">
             <!-- container for all the elements 4 coloumns -->
             <div class="pt-4 mt-2 ms-3  ps-4">
                 <h4 class=" fw-bold ">Browse by property type</h4>
             </div>
             <div class="row row-cols-4 mt-3  ms-4 mt-3  me-3  ">
                 <!-- a row and then deivided to 6 coloumns-->
-                <div class="col-md-3 pe-0">
+                <div class="col-md-3 col-sm-6  pe-0">
                     <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="images/pic1.jpeg"
                                 alt=""></a>
                         <h6 class=" card-title fw-bold mt-3  ms-1 ">Hotels</h6>
@@ -308,7 +327,7 @@
                         <!--text muted = to grey out-->
                     </div>
                 </div>
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="images/pic2.jpeg"
                                 alt=""></a>
 
@@ -316,14 +335,14 @@
                         <h6 class="card-subtitle mb-2 text-muted ms-1">935,621 apartments</h6>
                     </div>
                 </div>
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6  pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="images/pic3.jpeg"
                                 alt=""></a>
                         <h6 class="card-title mt-3 fw-bold ms-1">Resorts</h6>
                         <h6 class="card-subtitle mb-2 text-muted ms-1">18,701 resorts</h6>
                     </div>
                 </div>
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6  pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="images/pic4.jpeg"
                                 alt="">
 
@@ -336,11 +355,11 @@
         </div>
         </div>
 
-        <div class=" container-md ">
+        <div class=" container-fluid ">
             <!-- container for all the elements 2 coloumns -->
             <div class="row row-cols-2 mt-3  ms-4 mt-3  me-3  ">
                 <!-- a row and then deivided to 6 coloumns-->
-                <div class="col-md-6 pe-0">
+                <div class="col-md-6 col-sm-6 col-xs-10 pe-0">
                     <div class="card border-0 "><a class="stretched-link" href=""><img class="  img-fluid border-0"
                                 src="images/back1.webp" alt=""></a>
                         <div class="card-img-overlay ">
@@ -348,7 +367,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 pe-0 ">
+                <div class="col-md-6 col-sm-6 col-xs-10  pe-0 ">
                     <div class=" card border-0 "><a class="stretched-link" href=""><img class="img-fluid border-0 "
                                 src="images/back2.webp" alt=""></a>
                         <div class="card-img-overlay">
@@ -360,31 +379,31 @@
         </div>
         </div>
 
-        <div class=" container-md">
+        <div class=" container-fluid">
             <!-- container for all the elements 4 coloumns -->
 
             <div class="row row-cols-4 mt-4  ms-4 mt-3  me-3  ">
                 <!-- a row and then deivided to 6 coloumns-->
-                <div class="col-md-4 pe-0">
-                    <div class=" card border-0  "><a href=""><img class="img-fluid border-0" src="images/p1.webp"
-                                alt=""></a>
+                <div class="col-md-4 col-sm-6 col-xs-10  pe-0">
+                    <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
+                                src="images/p1.webp" alt=""></a>
                         <div class="card-img-overlay ">
                             <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Ain Sokhna</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 pe-0 ">
-                    <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/p2.webp"
-                                alt=""></a>
+                <div class="col-md-4 col-sm-6 col-xs-10  pe-0 ">
+                    <div class=" card border-0 "><a class="stretched-link" href=""><img class="img-fluid border-0"
+                                src="images/p2.webp" alt=""></a>
                         <div class="card-img-overlay ">
                             <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Cairo</h3>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 pe-0 ">
-                    <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/p3.webp"
-                                alt=""></a>
+                <div class="col-md-4 col-sm-12 col-xs-10 pe-0 ">
+                    <div class=" card border-0 col-xs-10 "><a class="stretched-link" href=""><img
+                                class="img-fluid border-0" src="images/p3.webp" alt=""></a>
                         <div class="card-img-overlay ">
                             <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Sharm El Sheikh</h3>
                         </div>
@@ -449,7 +468,7 @@
 
             <div class="row row-cols-6 mt-3  ms-4 me-3  ">
                 <!-- a row and then deivided to 6 coloumns-->
-                <div class="col-md-2 pe-0">
+                <div class="col-md-2 col-sm-4 pe-0">
                     <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="images/cairo.jpeg"
                                 alt=""></a>
 
@@ -460,35 +479,35 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/hurghada.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Hurghada, Egypt</h6>
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="images/alex.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Alexandria, Egypt</h6>
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/dubai.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Dubai, United Arab Emirates</h6>
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/saudi.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Mecca, Saudi Arabia </h6>
                     </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-4 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/sharm.jpeg"
                                 alt=""></a>
 
@@ -525,7 +544,7 @@
         <div class=" container-md ">
             <!-- container for all the elements 6 coloumns countries -->
             <div class="row row-cols-6 mt-3  ms-4 me-3  ">
-                <div class="col-md-2 pe-0">
+                <div class="col-md-2 col-sm-4 pe-0">
                     <div class=" card border-0  "><a href=""><img class="img-fluid border-0" src="images/ain.jpeg"
                                 alt=""></a>
 
@@ -533,7 +552,7 @@
                         <h6 class=" text-muted">116 km away</h6>
                     </div>
                 </div>
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/ras.jpeg"
                                 alt=""></a>
 
@@ -543,7 +562,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/ras1.jpeg"
                                 alt=""></a>
 
@@ -554,7 +573,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/port.jpeg"
                                 alt=""></a>
 
@@ -566,7 +585,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 pe-0 ">
+                <div class="col-md-2 col-sm-4 pe-0 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/raselbar.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1 mt-2">Ras El Bar</h6>
@@ -576,7 +595,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-4">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/alxx.jpeg"
                                 alt=""></a>
 
@@ -597,14 +616,14 @@
 
         </div>
 
-        <div class=" container-md ">
+        <div class=" container-fluid ">
             <!-- container for all the elements 3 coloumns countries -->
 
             <div class="row row-cols-3 mt-3  ms-4 me-5 ">
 
 
 
-                <div class="col-md-4 pe-0">
+                <div class="col-md-4 col-sm-12 pe-0">
                     <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
                                 src="images/grass.webp" alt=""></a>
 
@@ -630,7 +649,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 pe-0 ">
+                <div class="col-md-4 col-sm-12 pe-0 ">
                     <div class=" card border-0 "><a class="stretched-link" href="">
                             <img class="img-fluid border-0" src="images/train.webp" alt=""></a>
 
@@ -656,7 +675,7 @@
                 </div>
 
 
-                <div class="col-md-4 pe-0 ">
+                <div class="col-md-4 col-sm-12 pe-0 ">
 
                     <div class="card border-0 "><a class="stretched-link" href="">
                             <img class="img-fluid border-0" src="images/vit3.jpeg" alt=""></a>
@@ -696,7 +715,7 @@
 
 
 
-                <div class="col-md-6 pe-0">
+                <div class="col-md-6 col-sm-12 pe-0">
 
 
                     <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
@@ -704,10 +723,10 @@
 
                         <div class="card-img-overlay mt-5">
 
-                            <div class="h-50"></div>
+                            <div class="h-75"></div>
                             <div class="card-body p-0">
 
-                                <h5 class="text-white fw-bold mt-5 pt-5">
+                                <h5 class="text-white position-fixed fw-bold mt-5 pt-5">
 
                                     7 incredible UNESCO World Heritage sites in India
 
@@ -723,15 +742,15 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 pe-0 ">
+                <div class="col-md-6 col-sm-12 pe-0 ">
                     <div class=" card border-0 "><a class="stretched-link" href="">
                             <img class="img-fluid border-0" src="images/brazil.jpeg" alt=""></a>
 
                         <div class="card-img-overlay mt-5">
-                            <div class="h-50"></div>
+                            <div class="h-75"></div>
                             <div class="card-body p-0">
 
-                                <h5 class="text-white fw-bold mt-5 pt-5">
+                                <h5 class="text-white position-fixed fw-bold mt-5 pt-5">
 
                                     Neighboring countries to visit from Switzerland
                                 </h5>
@@ -755,7 +774,7 @@
 
         </div>
 
-        <div class=" container-md ">
+        <div class=" container-fluid ">
             <!-- container for all the elements 4 coloumns countries -->
 
 
@@ -769,7 +788,7 @@
 
 
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3 border-0 ">
                         <a class="stritched-link" href=""> <img src="images/snow.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -782,7 +801,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3  border-0 ">
                         <a class="stritched-link" href=""> <img src="images/shelter.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -795,7 +814,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3  border-0 ">
                         <a class="stritched-link" href=""> <img src="images/house.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -808,7 +827,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3  border-0 rounded-0">
                         <a class="stritched-link" href=""> <img src="images/wood.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -843,7 +862,7 @@
 
 
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3 border-0 ">
                         <a class="stritched-link" href=""> <img src="images/prague.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -857,7 +876,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3  border-0 ">
                         <a class="stritched-link" href=""> <img src="images/white.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -873,7 +892,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3  border-0 ">
                         <a class="stritched-link" href=""> <img src="images/bed.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -887,7 +906,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 pe-0 ">
+                <div class="col-md-3 col-sm-6 pe-0 ">
                     <div class="card mb-3  border-0 rounded-0">
                         <a class="stritched-link" href=""> <img src="images/stairs.webp" class="card-img-top rounded-0"
                                 alt="..."> </a>
@@ -915,7 +934,7 @@
 
 
 
-            <div class="col-md-3 pe-0 ">
+            <div class="col-md-3 col-sm-4 pe-0 ">
                 <div class="card mb-3 border-0 ">
                     <a class="stritched-link" href=""> <img src="images/giza.jpeg" class="card-img-top rounded-0"
                             alt="..."> </a>
@@ -929,7 +948,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 pe-0 ">
+            <div class="col-md-3 col-sm-4 pe-0 ">
                 <div class="card mb-3  border-0 ">
                     <a class="stritched-link" href=""> <img src="images/friends.jpeg" class="card-img-top rounded-0"
                             alt="..."> </a>
@@ -944,7 +963,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 pe-0 ">
+            <div class="col-md-3 col-sm-4 pe-0 ">
                 <div class="card mb-3  border-0 ">
                     <a class="stritched-link" href=""> <img src="images/friends2.png" class="card-img-top rounded-0"
                             alt="..."> </a>

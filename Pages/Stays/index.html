@@ -17,134 +17,138 @@
 </head>
 
 <body>
-    <section class="bg-primary" <header class="bg-body-tertiary bg-primary">
-        <div class="container-fluid bg-primary">
-            <nav class=" navbar bg-primary ps-3 ">
-                <div class="container-fluid  bg-primary me-5 mt-3 ">
-                    <a class="navbar-brand ps-5 ms-5 text-white fw-bold ">
-                        <h3>Booking.com</h3>
-                    </a>
-                    <form class="d-flex" role="search">
-                        <button class="btn text-white  thumb mx-1" data-bs-toggle="modal"
-                            data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Choose your currency">
-                            EGP
-                        </button>
-
-                        <div class="modal fade thumb " id="currenciesModal" tabindex="-1"
-                            aria-labelledby="currenciesModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
-                                            currency
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h6 class="fw-bold mb-3">All currencies</h6>
-                                        <div id="currencyModal" class="row">
+    <header class="bg-body-tertiary">
+        <nav class="navbar navbar-expand-md bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#">Booking.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav ms-auto d-flex mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#currenciesModal" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Choose your currency">
+                                    EGP
+                                </button>
+                            </div>
+                            <div class="modal fade" id="currenciesModal" tabindex="-1"
+                                aria-labelledby="currenciesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
+                                                currency
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="fw-bold mb-3">All currencies</h6>
+                                            <div id="currencyModal" class="row">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <button class="btn text-white thumb mx-1" data-bs-toggle="modal"
-                            data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Choose your language">
-                            <i class="fi fi-gb fs-5"></i>
-                        </button>
-
-
-                        <div class="modal fade thumb" id="languagesModal" tabindex="-1"
-                            aria-labelledby="languagesModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
-                                            language
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h6 class="fw-bold mb-3">All languages</h6>
-                                        <div id="languageModal" class="row thumb "></div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#languagesModal" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Choose your language">
+                                    <i class="fi fi-gb fs-5"></i>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="languagesModal" tabindex="-1"
+                                aria-labelledby="languagesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
+                                                language
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="fw-bold mb-3">All languages</h6>
+                                            <div id="languageModal" class="row"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <button class="btn thumb text-white mx-1" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                            data-bs-title="Contact Customer Service">
-                            <i class="bi bi-question-circle fs-5"></i>
-                        </button>
-                        <div class=" container-flex">
-                            <a href="#" class=" thumb col-xs-12 btn btn-outline-light border-0 mx-3">List your
-                                property</a>
-                            <a href="#" class=" btn col-xs-12 btn-sm  btn-light rounded-0 pt-2 mx-3">Register</a>
-                            <a href="#" class=" btn  btn-sm  btn-light rounded-0 pt-2">Sign in</a>
-                        </div>
-                    </form>
-                </div>
-            </nav>
-
-            <nav class="navbar bg-primary ps-5">
-
-                <div class="container-fluid ps-3 ms-5">
-                    <ul class="nav nav-pills col-xs-12  col-md-8 col-sm-12">
-                        <li class=" thumbnail nav-item">
-                            <!-- thumbnail for the hover -->
-                            <a class="nav-link  border rounded-5 active text-white " aria-current="page"
-                                href="index.html">
-                                <i class="bi bi-tree "></i>
-                                Stays
-                            </a>
                         </li>
-                        <li class=" thumbnail nav-item">
-                            <!-- thumbnail for the hover -->
-                            <a class="  nav-link text-white " href="#">
-                                <i class="bi bi-airplane"></i>
-                                Flights
-                            </a>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Contact Customer Service">
+                                    <i class="bi bi-question-circle fs-5"></i>
+                                </button>
+                            </div>
                         </li>
-                        <li class=" thumbnail nav-item">
-                            <a class="nav-link text-white" href="../Car Rentals/index.html">
-                                <i class="bi bi-car-front"></i>
-                                Car rentals
-                            </a>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
+                            </div>
                         </li>
-                        <li class=" thumbnail nav-item">
-                            <a class="nav-link text-white " href="../Attractions/index.html">
-                                <i class="bi bi-binoculars-fill"></i>
-                                Attractions
-                            </a>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-light mx-1">Register</a>
+                            </div>
                         </li>
-                        <li class=" thumbnail nav-item">
-                            <a class="nav-link text-white" href="../Airport Taxis/index.html">
-                                <i class="bi bi-taxi-front-fill"></i>
-                                Airport Taxis
-                            </a>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-light mx-1">Sign in</a>
+                            </div>
                         </li>
                     </ul>
-
-
                 </div>
-
-                <div class="container-fluid ps-3 pe-5  mt-5">
-                    <div class="text-white ps-5 mb-5 col-md-8 col-sm-12">
-                        <h1 class="display-5 fw-bold ">Find Your Next Stay </h1>
-
-
-                        <h3 class="text-white fw-light">Search deals on hotels, homes, and much more...</h3>
-                    </div>
+            </div>
+        </nav>
+        <nav class="navbar bg-primary">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../Stays/index.html">
+                            <i class="bi bi-tree"></i>
+                            Stays
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-airplane"></i>
+                            Flights
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../Car Rentals/index.html">
+                            <i class="bi bi-car-front"></i>
+                            Car rentals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../Attractions/index.html">
+                            <i class="bi bi-binoculars-fill"></i>
+                            Attractions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active rounded-5 border" href="index.html">
+                            <i class="bi bi-taxi-front-fill"></i>
+                            Airport Taxis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid ps-3 pe-5  mt-5">
+                <div class="text-white ps-5 mb-5 col-md-8 col-sm-12">
+                    <h1 class="display-5 fw-bold ">Find Your Next Stay </h1>
+                    <h3 class="text-white fw-light">Search deals on hotels, homes, and much more...</h3>
                 </div>
-
-
-            </nav>
-
-            <div class="container-fluid ">
                 <form>
                     <div class="input-group ps-5 pe-5 col-md-8 col-sm-12" style="height: 60px;">
                         <!-- ps= padding start  pe= padding end-->
@@ -162,15 +166,12 @@
                         <button class="btn btn-primary px-4 returnHide border border-warning border-4 rounded-0"
                             type="button">Search</button>
                     </div>
-
-
                 </form>
             </div>
-        </div>
-        </header>
-    </section>
+        </nav>
+    </header>
 
-    <main class="container-fluid p-4 ps-5 me-5">
+    <main class="container">
         <div class="container-fluid  p-4 ps-5 me-5">
             <!-- ps= padding start -->
             <input class="form-check-input border rounded-0" type="checkbox" value="" id="flexCheckDefault">
@@ -189,18 +190,12 @@
         </div>
         <!-- covid message  -->
         <div class="container-fluid ms-1 px-5">
-
             <div class=" col-sm-12 col-xs-12 col-lg-12 border rounded-0 ps-3 pt-2 h-100">
-
                 <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
                 Get the advice you need. Check the latest COVID-19 restrictions before you travel.
                 <span class=" ms-4"> <a href="#">Learn more</a>
                 </span>
-
-
-
             </div>
-
 
             <div class="mt-4 ms-4 col-sm-12">
                 <!--  mt= margin top/ ms= margin start  -->
@@ -211,14 +206,10 @@
             <!-- two card images that has overlays so we can write on them -->
 
             <div class=" text-decoration-none ms-5 g-col-6">
-
-                <div class=" row pe-5 ">
-
+                <div class="row pe-5 ">
                     <div class="col-md-6 col-sm-12">
-                        <div class=" card text-bg-dark col ps-0 pe-0 border rounded-0">
-
+                        <div class="card text-bg-dark col ps-0 pe-0 border rounded-0">
                             <img src="images/1.jpeg" class="card-img " alt="">
-
                             <div class="card-img-overlay border rounded-0">
                                 <h5 class="card-title pt-5">Escape for a while</h5>
                                 <p class="card-text pe-5">Enjoy the freedom of a monthly stay on Booking.com</p>
@@ -227,9 +218,7 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-6 col-sm-12">
-
                         <div class="  card text-bg-dark col ps-0 pe-0 border rounded-0 ">
                             <img src="images/2.jpeg" class="card-img  " alt="">
                             <div class="card-img-overlay float-sm-none  border rounded-0 ">
@@ -240,35 +229,80 @@
                                     Deals</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <div class=" border rounded-0 ps-3 pt-2 mt-5" style="height: 150px;">
+            <div class="border rounded-0 ps-3 pt-2 mt-5" style="height: 150px;">
                 <div class="container">
                     <img src="images/3.png" class="img mt-3 g-col-2" style="height: 100px;" alt="">
                     <span class="fw-bold mt-0 pb-5"> We have one question about your experience</span>
                 </div>
             </div>
         </div>
-        <div class=" container-fluid ">
+        <div class="container">
             <!-- container for all the elements 6 coloumns-->
             <div class="pt-4 mt-2 ms-3 ps-4">
                 <h4 class=" fw-bold ">Explore Egypt</h4>
                 <h6 class=" text-muted">These popular destinations have a lot to offer</h6>
             </div>
-            <div class="row row-cols-6 col-xs-12 mt-3  ms-4 me-3  ">
+            <div class="row mt-3">
                 <!-- a row and then deivided to 6 coloumns-->
-                <div class="col-md-2 col-sm-6 col-xs-12 pe-0">
-                    <div class=" card border-0  "><a href=""><img class="img-fluid border-0" src="images/col1.jpeg"
-                                alt=""></a>
-                        <h6 class=" card-title fw-bold ms-1 ">Alexandria</h6>
-                        <h6 class="card-subtitle mb-2 text-muted ms-1 ">388 properties</h6>
-                        <!--text muted = to grey out-->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top border-0" src="images/col6.jpeg" alt=""></a>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold ms-1">Alexandria</h6>
+                            <h6 class="card-subtitle mb-2 text-muted ms-1">388 properties</h6>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top border-0" src="images/col1.jpeg" alt=""></a>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold ms-1">Alexandria</h6>
+                            <h6 class="card-subtitle mb-2 text-muted ms-1">388 properties</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top border-0" src="images/col2.jpeg" alt=""></a>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold ms-1">Alexandria</h6>
+                            <h6 class="card-subtitle mb-2 text-muted ms-1">388 properties</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top border-0" src="images/col3.jpeg" alt=""></a>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold ms-1">Alexandria</h6>
+                            <h6 class="card-subtitle mb-2 text-muted ms-1">388 properties</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top border-0" src="images/col4.jpeg" alt=""></a>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold ms-1">Alexandria</h6>
+                            <h6 class="card-subtitle mb-2 text-muted ms-1">388 properties</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card border-0">
+                        <a href=""><img class="card-img-top border-0" src="images/col5.jpeg" alt=""></a>
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold ms-1">Alexandria</h6>
+                            <h6 class="card-subtitle mb-2 text-muted ms-1">388 properties</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-2 col-sm-6">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col2.jpeg"
                                 alt=""></a>
 
@@ -276,7 +310,7 @@
                         <h6 class="card-subtitle mb-2 text-muted ms-1">898 properties</h6>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
+                <div class="col-md-2 col-sm-6">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col3.jpeg"
                                 alt=""></a>
 
@@ -285,7 +319,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
+                <div class="col-md-2 col-sm-6">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col4.jpeg"
                                 alt=""></a>
 
@@ -295,24 +329,24 @@
 
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12 pe-0 ">
+                <div class="col-md-2 col-sm-6 ">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col5.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Dahab</h6>
                         <h6 class="card-subtitle mb-2 text-muted ms-1">213 properties</h6>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6 col-xs-12">
+                <div class="col-md-2 col-sm-6">
                     <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/col6.jpeg"
                                 alt=""></a>
                         <h6 class="card-title fw-bold ms-1">Ain Sokhna</h6>
                         <h6 class="card-subtitle mb-2 text-muted ms-1">428 properties</h6>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         </div>
-        <div class=" container-fluid ">
+        <div class="container-fluid">
             <!-- container for all the elements 4 coloumns -->
             <div class="pt-4 mt-2 ms-3  ps-4">
                 <h4 class=" fw-bold ">Browse by property type</h4>

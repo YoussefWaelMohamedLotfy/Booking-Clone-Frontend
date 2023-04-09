@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tons of tours, activities, and things to do | Booking.com</title>
+    <link rel="icon" href="../../shared/favico.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+    <link href="../../bootstrap-custom/custom-scss/custom-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+        integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bg-body-tertiary">
+        <nav class="navbar navbar-expand-md bg-primary">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#">Booking.com</a>
+                <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler" aria-controls="navbarToggler " aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse text-white" id="navbarToggler">
+                    <ul class="navbar-nav ms-auto text-white d-flex mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#currenciesModal" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Choose your currency">
+                                    EGP
+                                </button>
+                            </div>
+                            <div class="modal fade" id="currenciesModal" tabindex="-1"
+                                aria-labelledby="currenciesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
+                                                currency
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="fw-bold mb-3">All currencies</h6>
+                                            <div id="currencyModal" class="row">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                                    data-bs-target="#languagesModal" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Choose your language">
+                                    <i class="fi fi-gb fs-5"></i>
+                                </button>
+                            </div>
+                            <div class="modal fade" id="languagesModal" tabindex="-1"
+                                aria-labelledby="languagesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
+                                                language
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6 class="fw-bold mb-3">All languages</h6>
+                                            <div id="languageModal" class="row"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
+                                    data-bs-placement="bottom" data-bs-title="Contact Customer Service">
+                                    <i class="bi bi-question-circle fs-5"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-light mx-1">Register</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-grid gap-2 d-md-block">
+                                <a href="#" class="btn btn-light mx-1">Sign in</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar-brand bg-primary">
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active rounded-5 border text-white" aria-current="page" href="index.html">
+                            <i class="bi bi-tree"></i>
+                            Stays
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-airplane"></i>
+                            Flights
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../Car Rentals/index.html">
+                            <i class="bi bi-car-front"></i>
+                            Car rentals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../Attractions/index.html">
+                            <i class="bi bi-binoculars-fill"></i>
+                            Attractions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../Airport Taxis/index.html">
+                            <i class="bi bi-taxi-front-fill"></i>
+                            Airport Taxis
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid ps-4 pe-5  " style="background-image:url(images/green.jpeg)">
+
+                <div class="text-white ps-5 mb-5 col-md-8 col-sm-12">
+                    <h3 class="display-6 fw-bold mt-3 pt-5">The freedom to take your time</h3>
+                    <h5 class="text-white fw-light mt-2">Experience the world your way when you stay for 30 nights or
+                        more</h5>
+                </div>
+                <form class=" pt-5 ">
+                    <div class="input-group ps-5 pe-5 col-md-8 col-sm-12 " style="height: 60px;">
+                        <!-- ps= padding start  pe= padding end-->
+                        <span class="input-group-text border border-warning border-4 rounded-3" id="addon-wrapping">
+                            <i class="fa-solid fa-bed"></i>
+                        </span>
+                        <input type="text" class=" w-25 form-control border border-warning border-4 "
+                            placeholder="More places than you could ever go (but you can try!)">
+
+                        <input type="date" class=" w-25 form-control border-end-0 border border-warning border-4 "
+                            placeholder="check In">
+                        <input type="date" class=" w-25 form-control border-start-1 border border-warning border-4 "
+                            placeholder="check out">
+
+                        <button class="btn btn-primary px-4 returnHide border border-warning border-4 rounded-3"
+                            type="button">Search</button>
+                    </div>
+            </div>
+            </form>
+
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+
+        <div class="container-fluid mt-5">
+
+            <div class=" col-sm-12 col-xs-12 col-lg-12 border rounded-3 ps-3 pt-2 h-100">
+                <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
+                Get the advice you need. Check the latest COVID-19 restrictions before you travel.
+                <span class=" ms-4"> <a href="#">Learn more</a>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+
+            <div class=" pt-2"></div>
+            <div class="col-lg-6 pt-4 mt-5 pt-lg-0 " data-aos-delay="100">
+
+                <h3 class="fw-bold mt-5 pt-5">Discover the world at your own pace</h3>
+                <p class="">
+                    A monthly stay is perfect for working remotely, reuniting with family and friends, or just
+                    exploring the world again.
+
+                    More properties are opening for monthly stays on Booking.com every day, so it’s easier than ever
+                    to get away for a while.
+                </p>
+
+            </div>
+
+            <div class="col-lg-6 ">
+                <img src="images/girl.jpg " class="img-fluid border rounded-4" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="row mt-5" style="background-color: rgba(184, 182, 182, 0.165) ;">
+
+        <div class="">
+            <h2 class=" mt-5 fw-bold text-center">Why book your monthly stay on Booking.com</h2>
+        </div>
+
+        <div class="row gy-4">
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="mt-2 ms-5">
+                        <h3 class="fw-bold text-center">Save more by staying longer</h3>
+                    </div>
+
+
+                    <p class="fw-light mt-2 text-center ms-5">
+                        Some properties on Booking.com now offer reductions on monthly stays, meaning you can save more
+                        when you stay longer.
+                    </p>
+
+                </article>
+            </div>
+
+            <!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="mt-2 ms-5">
+                        <h3 class="fw-bold text-center">Flexible stays</h3>
+                    </div>
+
+
+                    <p class="fw-light text-center mt-2  ms-5">
+                        Travel plans change – so can your bookings. Enjoy peace of mind when you book a property with
+                        free cancellation and flexible check-in.
+                    </p>
+
+                </article>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="mt-2 ms-5">
+                        <h3 class="fw-bold text-center">Over 900,000 properties</h3>
+                    </div>
+
+
+                    <p class="fw-light text-center mt-2  ms-5">
+                        Choose from homes, hotels, and everything in between. Rely on verified guest reviews to pick a
+                        place you can call home.
+                    </p>
+
+                </article>
+            </div>
+
+        </div><!-- End recent posts list -->
+
+    </div>
+
+
+    
+    <div class="row mt-5">
+
+        <div class="col-lg-5 ms-5">
+            <img src="images/dubai.jpeg " class="img-fluid border ms-5 rounded-4" alt="">
+        </div>
+
+        <div class="col-lg-6 pt-2 mt-5 ms-2" data-aos-delay="100">
+
+            <div class="card ms-5 border-0">
+                <h5 class="card-title border-0 ms-3 fw-bold">Rove DownTown</h5>
+                <div class="card-body">
+                  <p class="card-text">Featuring an outdoor swimming pool and a sundeck, Rove Downtown Dubai is conveniently located in the heart of Downtown Dubai, adjacent to Burj Khalifa and The Dubai Mall.
+
+                    The hotel provides spacious 26sqm rooms of which 30 percent are interconnecting, as well as 24-hour meeting rooms. Other services include free WiFi, late checkout at 14:00, a 24-hour gym, a laundromat and boutique convenience store.
+                    
+                    Dubai International Airport is a 20-minute drive while Burj Khalifa Metro Station is only a 4-minute drive from the property.</p>
+                  <a href="#" class="btn btn-primary">View This Property</a>
+                </div>
+              </div>
+
+        </div>
+
+        
+    </div>
+
+    <div class=" container ">
+        <!-- container for all the elements 6 coloumns countries -->
+
+        <div class="pt-4 mt-2 ms-3 ps-4">
+            <h4 class=" fw-bold ">Discover somewhere new</h4>
+            <h6 class=" text-muted">Explore some of our favorite destinations for a stay of 30 nights or more</h6>
+        </div>
+
+        <div class="row mt-5  ms-4 me-3  ">
+            <!-- a row and then deivided to 6 coloumns-->
+            <div class="col-md-2 col-sm-4 pe-0">
+                <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="images/dubai1.jpeg"
+                            alt=""></a>
+
+
+                    <h6 class=" card-title fw-bold ms-1 mt-3">Dubai</h6>
+                    <!--text muted = to grey out-->
+
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/london.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">London</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="images/istanbul.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">Istanbul</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/hongkong.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">Hong Kong</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/berlin.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">Berlin</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/Lisbon.jpeg"
+                            alt=""></a>
+
+                    <h6 class="card-title fw-bold ms-1 mt-4">Lisbon</h6>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class=" container ">
+        <!-- container for all the elements 6 coloumns countries -->
+
+        <div class="pt-4 mt-2 ms-3 ps-4">
+            <h4 class=" fw-bold ">Make yourself at home</h4>
+            <h6 class=" text-muted">Find somewhere to settle down from our selection of top monthly stay properties</h6>
+        </div>
+
+        <div class="row mt-5  ms-4 me-3  ">
+            <!-- a row and then deivided to 6 coloumns-->
+            <div class="col-md-2 col-sm-4 pe-0">
+                <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="images/portal.jpeg"
+                            alt=""></a>
+
+
+                    <h6 class=" card-title fw-bold ms-1 mt-3">Portal del Rodeo ApartaHotel</h6>
+                    <!--text muted = to grey out-->
+
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/wyz.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">WYZ Athens Apartments by UPSTREET</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="images/smart.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">SMARTments business Wien Heiligenstadt</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/rose.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">Rose Garden Hotel Apartments - Barsha</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 pe-0 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/nox.jpeg"
+                            alt=""></a>
+                    <h6 class="card-title fw-bold ms-1 mt-3">NOX HOTELS - Kensington</h6>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-4 ">
+                <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="images/scape.jpeg"
+                            alt=""></a>
+
+                    <h6 class="card-title fw-bold ms-1 mt-4">Scape Living at Aurora</h6>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <section class="bg-primary ">
+        <div class="text-center bg-primary  ms-2 pt-3">
+            <a href="#" class="btn btn-sm btn-outline-light bg-primary  ">List your property</a>
+        </div>
+        <hr />
+        <div class="container bg-primary pb-3 fw-bold text-center">
+
+            <a href="#" class="text-white  "> <small>Mobile version</small></a>
+            <a href="#" class="text-white ms-4 "><small>Your account</small></a>
+            <a href="#" class="text-white ms-4 "><small>Making changes online to your booking</small></a>
+            <a href="#" class="text-white ms-4 "><small>Customer Service Help</small></a>
+            <a href="#" class="text-white ms-4 "><small>Become an affiliate</small></a>
+            <a href="#" class="text-white ms-4 "><small>Booking.com for Business</small></a>
+
+        </div>
+    </section>
+    <footer class="container">
+        <section id="footerLinks" class="my-3">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Countries</a>
+                        </li>
+                        <li>
+                            <a href="#">Regions</a>
+                        </li>
+                        <li>
+                            <a href="#">Cities</a>
+                        </li>
+                        <li>
+                            <a href="#">Districts</a>
+                        </li>
+                        <li>
+                            <a href="#">Airports</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Places of interest</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Homes</a>
+                        </li>
+                        <li>
+                            <a href="#">Apartments</a>
+                        </li>
+                        <li>
+                            <a href="#">Resorts</a>
+                        </li>
+                        <li>
+                            <a href="#">Villas</a>
+                        </li>
+                        <li>
+                            <a href="#">Hostels</a>
+                        </li>
+                        <li>
+                            <a href="#">B&Bs</a>
+                        </li>
+                        <li>
+                            <a href="#">Guest houses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Unique places to stay</a>
+                        </li>
+                        <li>
+                            <a href="../Reviews/index2.html">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#">Unpacked: Travel articles</a>
+                        </li>
+                        <li>
+                            <a href="#">Travel Communities</a>
+                        </li>
+                        <li>
+                            <a href="#">Seasonal and holiday deals</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Car hire</a>
+                        </li>
+                        <li>
+                            <a href="#"> Flight finder</a>
+                        </li>
+                        <li>
+                            <a href="#">Restaurant reservations</a>
+                        </li>
+                        <li>
+                            <a href="#">Booking.com for Travel Agents</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">Coronavirus (COVID-19) FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#">About Booking.com</a>
+                        </li>
+                        <li>
+                            <a href="#">Customer Service help</a>
+                        </li>
+                        <li>
+                            <a href="#"> Partner help</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Sustainability</a>
+                        </li>
+                        <li>
+                            <a href="#">Press centre</a>
+                        </li>
+                        <li>
+                            <a href="#">Safety resource centre</a>
+                        </li>
+                        <li>
+                            <a href="#">Investor relations</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Partner dispute</a>
+                        </li>
+                        <li>
+                            <a href="#">How we work</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy & Cookie Statement</a>
+                        </li>
+                        <li>
+                            <a href="#">MSA Statement</a>
+                        </li>
+                        <li>
+                            <a href="#">Corporate contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mt-4">
+            <div class="text-center">
+                <a href="#" class="text-decoration-none">Extranet login</a>
+            </div>
+            <div class="my-4 ps-5">
+                <p class="fw-light">
+                    Copyright &copy; 1996-2023 Booking.com&trade;. All rights reserved.
+                </p>
+            </div>
+            <div class="my-1 text-center">
+                <p class="text-muted fw-light">
+                    Booking.com is part of Booking Holdings Inc., the world leader in online travel and related
+                    services.
+                </p>
+            </div>
+            <div class="my-2 text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <img src="../../shared/booking-logo.png" width="96" height="26" />
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="../../shared/priceline-logo.png" width="96" height="26" />
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="../../shared/kayak-logo.png" width="96" height="26" />
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="../../shared/agoda-logo.png" width="96" height="26" />
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="../../shared/rentalcars-logo.png" width="96" height="26" />
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="../../shared/opentable-logo.png" width="96" height="26" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../bootstrap-custom/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
